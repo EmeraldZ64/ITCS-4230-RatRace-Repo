@@ -11,7 +11,10 @@ else // whole string is already displayed
     current_dialogue++; // move to next dialogue
 	
     if (current_dialogue > last_dialogue) // END OF DIALOGUE ARRAY
-		instance_destroy(); 
+	{
+		obj_player.state = PLAYERSTATES.ROAMING;
+		instance_destroy();
+	}
     else
     {
         // format new string 

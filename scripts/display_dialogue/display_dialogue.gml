@@ -1,12 +1,18 @@
 // creates dialogue box object to display given dialogue, or overrides current dialogue box with new one
-function display_dialogue(_dialogue)
+// OPTIONAL ARGUMENT: startingLine, integer of index to start dialogue display from
+function display_dialogue(_dialogue, _startingLine = 0)
 {
+	obj_player.state = PLAYERSTATES.INDIALOGUE;
+	
 	if(!instance_exists(obj_dialogbox))
 	{
 		//create dialog box if one doesn't exist and set dialogue
 		var inst = instance_create_layer(0,0, "GUI", obj_dialogbox);
 		inst.dialogues = _dialogue;
 		inst.last_dialogue = array_length(_dialogue) - 1;
+		inst.current_dialogue = _startingLine;
+		// pre-wrap first dialogue
+		inst.dialogues[inst.current_dialogue].line = string_wrap(inst.dialogues[inst.current_dialogue].line, inst.text_width);
 	}
 	else
 	{
@@ -16,6 +22,7 @@ function display_dialogue(_dialogue)
 		var inst = instance_create_layer(0,0, "GUI", obj_dialogbox);
 		inst.dialogues = _dialogue;
 		inst.last_dialogue = array_length(_dialogue) - 1;
+		inst.current_dialogue = _startingLine;
 		
 	}
 

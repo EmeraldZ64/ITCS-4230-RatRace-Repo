@@ -13,3 +13,13 @@ move_decel = 2;
 // movement vector values
 move_norm_x = 0;
 move_norm_y = 0;
+
+can_interact = true;
+
+enum PLAYERSTATES
+{
+	ROAMING = 0,
+	INDIALOGUE = 1
+}
+
+state = PLAYERSTATES.ROAMING;

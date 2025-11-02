@@ -17,6 +17,7 @@ if (interactible) and (obj_player.can_interact) and (!has_interacted)
 {
 	display_dialogue(Dialogue);
 	has_interacted = true;
+	global.foundEye = true;
 }
 else if (interactible) and (obj_player.can_interact) and (has_interacted)
 {

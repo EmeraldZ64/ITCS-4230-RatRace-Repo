@@ -10,7 +10,22 @@ var Dialogue =
 {speaker: "Angel", line: "GO FIND THAT LITTLE STINKER"},
 ]
 
-if (interactible) and (obj_player.can_interact) and (!has_interacted)
+var WinDialogue = 
+[
+{speaker: "Angel", line: "GO FIND THAT LITTLE STINKER"},
+{speaker: "Angel", line: "...OH, YOU FOUND HIM"},
+{speaker: "Angel", line: "GOOD JOB"},
+{speaker: "Angel", line: "YOU WANT A FREE TICKET TO HEAVEN?"}
+]
+
+// GAME WIN IS HERE
+if (interactible) and (obj_player.can_interact) and (global.foundEye)
+{
+	display_dialogue(WinDialogue);
+	global.foundEye = false;
+	global.gameWon = true;
+}
+else if (interactible) and (obj_player.can_interact) and (!has_interacted)
 {
 	display_dialogue(Dialogue);
 	has_interacted = true;

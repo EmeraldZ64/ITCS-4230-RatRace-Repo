@@ -28,9 +28,9 @@ if (state == PLAYERSTATES.ROAMING)
 	
 		// add acceleration factor to current movement
 		hspeed += input_x * move_accel;
-		vspeed += input_y * move_accel;
+		vspeed += input_y * move_accel_vertical;
 	
-		// limit max movement speed + normalize
+		// limit speed to max movement speed + normalize
 		dist = sqrt(hspeed * hspeed + vspeed * vspeed);
 		move_speed = min(move_speed_max, dist);
 	

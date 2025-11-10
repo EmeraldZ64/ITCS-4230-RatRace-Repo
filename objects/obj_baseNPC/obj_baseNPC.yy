@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_eyebase",
+  "%Name":"obj_baseNPC",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,7 +8,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_eyebase",
+  "name":"obj_baseNPC",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,8 +29,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"eye_color","filters":[],"listItems":[],"multiselect":false,"name":"eye_color","rangeEnabled":true,"rangeMax":5.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":1,},
-    {"$GMObjectProperty":"v2","%Name":"image_xscale","filters":[],"listItems":[],"multiselect":false,"name":"image_xscale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"eye_color","filters":[],"listItems":[],"multiselect":false,"name":"eye_color","rangeEnabled":true,"rangeMax":5.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"interact_distance","filters":[],"listItems":[],"multiselect":false,"name":"interact_distance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"scale","filters":[],"listItems":[],"multiselect":false,"name":"scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.5","varType":0,},
   ],
@@ -38,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_eye",
-    "path":"sprites/spr_eye/spr_eye.yy",
+    "name":"spr_npc",
+    "path":"sprites/spr_npc/spr_npc.yy",
   },
   "spriteMaskId":null,
   "visible":true,

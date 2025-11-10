@@ -29,7 +29,7 @@
   "resources":[
     {"id":{"name":"fnt_dialogue","path":"fonts/fnt_dialogue/fnt_dialogue.yy",},},
     {"id":{"name":"obj_baseNPC","path":"objects/obj_baseNPC/obj_baseNPC.yy",},},
-    {"id":{"name":"obj_dialogBox","path":"objects/obj_dialogBox/obj_dialogBox.yy",},},
+    {"id":{"name":"obj_dialogueBox","path":"objects/obj_dialogueBox/obj_dialogueBox.yy",},},
     {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"test_dialogueboxobject","path":"objects/test_dialogueboxobject/test_dialogueboxobject.yy",},},
@@ -37,6 +37,7 @@
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"display_dialogue","path":"scripts/display_dialogue/display_dialogue.yy",},},
     {"id":{"name":"string_wrap","path":"scripts/string_wrap/string_wrap.yy",},},
+    {"id":{"name":"spr_dialogueBox","path":"sprites/spr_dialogueBox/spr_dialogueBox.yy",},},
     {"id":{"name":"spr_npc","path":"sprites/spr_npc/spr_npc.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
   ],

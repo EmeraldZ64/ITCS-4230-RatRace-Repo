@@ -4,10 +4,10 @@ function display_dialogue(_dialogue, _startingLine = 0)
 {
 	obj_player.state = PLAYERSTATES.INDIALOGUE;
 	
-	if(!instance_exists(obj_dialogBox))
+	if(!instance_exists(obj_dialogueBox))
 	{
 		//create dialog box if one doesn't exist and set dialogue
-		var inst = instance_create_layer(0,0, "GUI", obj_dialogBox);
+		var inst = instance_create_layer(0,0, "GUI", obj_dialogueBox);
 		inst.dialogues = _dialogue;
 		inst.last_dialogue = array_length(_dialogue) - 1;
 		inst.current_dialogue = _startingLine;
@@ -18,9 +18,9 @@ function display_dialogue(_dialogue, _startingLine = 0)
 	else // May Never Happen?
 	{
 		//destroy old box and create a new one
-		instance_destroy(obj_dialogBox);
+		instance_destroy(obj_dialogueBox);
 		
-		var inst = instance_create_layer(0,0, "GUI", obj_dialogBox);
+		var inst = instance_create_layer(0,0, "GUI", obj_dialogueBox);
 		inst.dialogues = _dialogue;
 		inst.last_dialogue = array_length(_dialogue) - 1;
 		inst.current_dialogue = _startingLine;

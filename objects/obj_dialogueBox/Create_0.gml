@@ -14,5 +14,7 @@ namecard_offset_y = text_y - 140;
 char_current = 1; // iterator across text[text_current] string
 char_speed = 0.5; // how much to iterate by per draw event
 
-// format dialogue string to fit to max width (with stringwrap script)
-// dialogues[current_dialogue].line = string_wrap(dialogues[current_dialogue].line, text_width);
+
+// this prevents skipping first dialogue on first NPC interaction input
+dialogue_cooldown_on = true;
+alarm[0] = 10;

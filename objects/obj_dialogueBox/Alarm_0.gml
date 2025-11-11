@@ -1,0 +1,1 @@
+dialogue_cooldown_on = false;

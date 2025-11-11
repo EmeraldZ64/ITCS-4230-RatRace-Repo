@@ -1,3 +1,6 @@
+// Inherit the parent event (from obj_depthObjectParent)
+event_inherited();
+
 //*** MOVEMENT SYSTEM used Badwrong's Movement and Vectors Gamemaker Tutorial
 
 image_xscale *= 2.5;

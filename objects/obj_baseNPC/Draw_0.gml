@@ -1,8 +1,9 @@
-draw_self()
+// Inherit the parent event
+event_inherited();
 
 if (interactible) and (!obj_player.state == PLAYERSTATES.INDIALOGUE)
 {
 	draw_set_halign(fa_middle);
 	draw_set_font(fnt_dialogue);
-	draw_text(x, y - 96,  "E");
+	draw_text(x, y - 144,  "E");
 }

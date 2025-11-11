@@ -1,18 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gameController",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_tree",
+  "eventList":[],
   "managed":true,
-  "name":"obj_gameController",
+  "name":"obj_tree",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controllers",
-    "path":"folders/Objects/Controllers.yy",
+    "name":"Environment",
+    "path":"folders/Objects/Environment.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"obj_baseDepthParent",
+    "path":"objects/obj_baseDepthParent/obj_baseDepthParent.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -29,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_tree",
+    "path":"sprites/spr_tree/spr_tree.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,1 +1,3 @@
-visible = false;
+visible = true;
+
+depth = -y;

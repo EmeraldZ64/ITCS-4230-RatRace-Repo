@@ -28,3 +28,5 @@ enum PLAYERSTATES
 }
 
 state = PLAYERSTATES.ROAMING;
+
+depth = 0;

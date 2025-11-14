@@ -57,4 +57,7 @@ else if (state == PLAYERSTATES.INDIALOGUE)
 }
 
 x = clamp(x, 0, room_width - sprite_width / 2);
-y = clamp(y, 0, room_height - sprite_height / 2);
+y = clamp(y, 0 + sprite_height, room_height -sprite_height / 2);
+
+// dynamically set depth
+depth = -y;

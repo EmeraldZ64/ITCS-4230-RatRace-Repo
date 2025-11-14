@@ -41,7 +41,7 @@ if (state == PLAYERSTATES.ROAMING)
 			move_norm_y = vspeed / dist;
 		}
 	}
-	else // Stop Player Movement
+	else // Do decelleration
 		move_speed = max(move_speed - move_decel, 0);
 
 	// update movement vector
@@ -56,6 +56,28 @@ else if (state == PLAYERSTATES.INDIALOGUE)
 	vspeed = 0;
 }
 
+#region HANDLE PLAYER MOVEMENT FOR COLLISIONS
+
+if (place_meeting(x + hspeed, y, obj_baseCollision)) // HANDLE HORIZONTAL CHECK
+{
+	// nudge player close by 1px until finally colliding (to close the gap)
+	while(!place_meeting(x + sign(hspeed), y, obj_baseCollision))
+	{
+		x += sign(hspeed);
+	}
+	hspeed = 0; // finally set to 0
+}
+if (place_meeting(x, y + vspeed, obj_baseCollision)) // HANDLE VERTICAL CHECK
+{
+	while(!place_meeting(x, y + sign(vspeed), obj_baseCollision))
+	{
+		y += sign(vspeed);
+	}
+	vspeed = 0;
+}
+#endregion
+
+// keep player from leaving gamemaker room space
 x = clamp(x, 0, room_width - sprite_width / 2);
 y = clamp(y, 0 + sprite_height, room_height -sprite_height / 2);
 

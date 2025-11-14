@@ -1,4 +1,4 @@
-// Inherit the parent event
+// Inherit the parent event 
 event_inherited();
 
 if (interactible) and (!obj_player.state == PLAYERSTATES.INDIALOGUE)

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"dialoguePage",
+  "%Name":"dialogueChoice",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"dialoguePage",
+  "name":"dialogueChoice",
   "parent":{
     "name":"Structs",
     "path":"folders/Scripts/Structs.yy",

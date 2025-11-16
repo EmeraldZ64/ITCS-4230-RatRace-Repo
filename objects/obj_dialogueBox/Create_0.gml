@@ -19,3 +19,8 @@ char_speed = 0.5; // how much to iterate by per draw event
 // this prevents skipping first dialogue on first NPC interaction input
 dialogue_cooldown_on = true;
 alarm[0] = 4;
+
+// choice selection stuff
+player_isChoosing = false;
+player_readyForNext = false;
+chosen_skipTo = -1; // set by obj_dialogueChoice if needed

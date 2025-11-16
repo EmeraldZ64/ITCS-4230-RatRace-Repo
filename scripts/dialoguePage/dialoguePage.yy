@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"dialoguePage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dialoguePage",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

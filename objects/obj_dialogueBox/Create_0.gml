@@ -3,6 +3,7 @@ dialogues = [];
 current_dialogue = 0; // iterator across dialogue array
 last_dialogue = array_length(dialogues) - 1; // index of last text in dialogue array
 
+
 // text format stuff
 text_width = 700; // max width before text wrap in dialogue box
 text_x = display_get_gui_width() / 2; // x and y to start drawing text from

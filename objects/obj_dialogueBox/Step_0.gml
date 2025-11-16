@@ -1,7 +1,13 @@
 if (keyboard_check_pressed(vk_space)) or (keyboard_check_pressed(ord("E"))) and (!dialogue_cooldown_on)
 {
 	var _len = string_length(dialogues[current_dialogue].line);
-
+	
+	// if this dialogue is marked as a last line, set accordingly
+	if (dialogues[current_dialogue].isEndingLine)
+	{
+		last_dialogue = current_dialogue;
+	}
+	
 	// format first dialogue string to fit to max width (with stringwrap script)
 	dialogues[current_dialogue].line = string_wrap(dialogues[current_dialogue].line, text_width);
 
@@ -11,8 +17,14 @@ if (keyboard_check_pressed(vk_space)) or (keyboard_check_pressed(ord("E"))) and 
 	else // whole string is already displayed
 	{
 		current_dialogue++; // move to next dialogue
-	
-		if (current_dialogue > last_dialogue) // END OF DIALOGUE ARRAY
+		
+		/* IMPLEMENT CODE HERE: 
+		- Check if dialogue has choices
+		- spawn dialogue choice object
+		*/ 
+		
+		// END OF DIALOGUE ARRAY
+		if (current_dialogue > last_dialogue)
 		{
 			obj_player.state = PLAYERSTATES.ROAMING;
 			instance_destroy();

@@ -56,7 +56,7 @@ else if (state == PLAYERSTATES.INDIALOGUE)
 	vspeed = 0;
 }
 
-#region HANDLE PLAYER MOVEMENT FOR COLLISIONS
+#region HANDLE PLAYER MOVEMENT FOR STATIC COLLISION OBJECTS
 
 if (place_meeting(x + hspeed, y, obj_baseCollision)) // HANDLE HORIZONTAL CHECK
 {

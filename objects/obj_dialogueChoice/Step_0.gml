@@ -23,13 +23,29 @@ if keyboard_check_pressed(vk_up)
 // choice was selected
 if keyboard_check_pressed(vk_enter)
 {	
-	var _skipTo = dialogueChoices[choice_hovering].skipToLine;
-	
-	with(obj_dialogueBox)
+	#region HANDLE DIALOGUE NEXT PAGE
+	if (dialogueChoices[choice_hovering].skipToLine != -1)
 	{
-		chosen_skipTo = _skipTo;
-		player_readyForNext = true;
+		var _skipTo = dialogueChoices[choice_hovering].skipToLine;
+	
+		with(obj_dialogueBox)
+		{
+			chosen_skipTo = _skipTo;
+			player_readyForNext = true;
+		}
 	}
+	else // skipToLine had default -1 (meaning don't skip)
+	{
+		with(obj_dialogueBox)
+		{
+			chosen_skipTo = current_dialogue + 1;
+			player_readyForNext = true;
+		}
+	}
+	#endregion
+	
+	// handle scoring
+	percentBlue += dialogueChoices[choice_hovering].voteValue;
 	
 	instance_destroy(self);
 }

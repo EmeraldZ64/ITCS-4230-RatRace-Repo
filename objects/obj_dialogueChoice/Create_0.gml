@@ -1,6 +1,6 @@
 dialogueChoices = [
-new dialogueChoice("Choice A"),
-new dialogueChoice("Choice B")
+new dialogueChoice("Choice A", -1, NEUTRAL),
+new dialogueChoice("Choice B", -1, NEUTRAL)
 ];
 
 // text format stuff

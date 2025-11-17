@@ -11,8 +11,8 @@
   "name":"obj_dialogueBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controllers",
-    "path":"folders/Objects/Controllers.yy",
+    "name":"UI Stuff",
+    "path":"folders/Objects/UI Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

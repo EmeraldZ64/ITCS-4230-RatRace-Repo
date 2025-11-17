@@ -28,6 +28,7 @@ if ((keyboard_check_pressed(vk_space)) or (keyboard_check_pressed(ord("E"))) and
 		if (dialogues[current_dialogue].choiceLines != "Empty")
 		{
 			display_choices(dialogues[current_dialogue].choiceLines);
+			show_debug_message(dialogues[current_dialogue].choiceLines)
 			player_isChoosing = true;
 		}
 		else // no choices to be had, continue to determining next line

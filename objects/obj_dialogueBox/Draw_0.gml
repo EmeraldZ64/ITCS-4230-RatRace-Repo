@@ -19,5 +19,5 @@ if (char_current < _len)
 // copy substring up to char_current index and display
 var _str = string_copy(dialogues[current_dialogue].line, 1, char_current);
 
-draw_text(text_x, text_y,  _str);
+draw_text(text_x, text_y - 30,  _str);
 draw_text(namecard_offset_x, namecard_offset_y, dialogues[current_dialogue].speaker);

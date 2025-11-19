@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"UI Stuff",
-    "path":"folders/Objects/UI Stuff.yy",
+    "path":"folders/Objects/Controllers/UI Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

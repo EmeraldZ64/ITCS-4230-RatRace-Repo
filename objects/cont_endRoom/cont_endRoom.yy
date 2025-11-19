@@ -10,8 +10,8 @@
   "name":"cont_endRoom",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controllers",
-    "path":"folders/Objects/Controllers.yy",
+    "name":"Useless",
+    "path":"folders/Objects/Useless.yy",
   },
   "parentObjectId":null,
   "persistent":false,

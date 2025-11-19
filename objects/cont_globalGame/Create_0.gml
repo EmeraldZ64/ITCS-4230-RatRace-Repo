@@ -1,4 +1,4 @@
-globalvar percentBlue;
+globalvar percentBlue; // globalvar is deprecated please change to global. when not a lazybones
 globalvar movesLeft;
 
 percentBlue = .50;

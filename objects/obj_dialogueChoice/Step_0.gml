@@ -44,6 +44,30 @@ if keyboard_check_pressed(vk_enter)
 	}
 	#endregion
 	
+	#region HANDLE QUEST ACCEPTING AND QUEST FUNCTION CALLS
+	
+	// handle quest accepting if choice had a non-empty questAccept
+	if (dialogueChoices[choice_hovering].questAccept != "") and (!global.onQuest)
+	{
+		// parse through all quests in global quest list
+		for (var i = 0; i < ds_list_size(global.ds_allQuests) - 1; i++)
+		{
+			// check if quest name matches name passed with dialogueChoice
+			if (global.ds_allQuests[| i].name == dialogueChoices[choice_hovering].questAccept)
+			{
+				global.ds_allQuests[| i].state = QUESTSTATE.INPROGRESS; // change this
+				global.onQuest = true;
+			}
+		}
+	}
+	
+	// handle calling quest function call if dialogueChoice had one
+	if (dialogueChoices[choice_hovering].questDo != "")
+	{
+		method_call(dialogueChoices[choice_hovering].questDo);
+	}
+	#endregion
+	
 	// handle scoring
 	percentBlue += dialogueChoices[choice_hovering].voteValue;
 	

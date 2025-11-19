@@ -9,8 +9,8 @@
   "name":"obj_baseDepthParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Useless",
+    "path":"folders/Objects/Useless.yy",
   },
   "parentObjectId":null,
   "persistent":false,

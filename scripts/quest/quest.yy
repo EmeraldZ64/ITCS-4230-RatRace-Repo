@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"quest",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"quest",
+  "parent":{
+    "name":"Structs",
+    "path":"folders/Scripts/Structs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

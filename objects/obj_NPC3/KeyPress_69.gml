@@ -16,7 +16,7 @@ new dialoguePage("Filbert","Oh... oh wow. Okay. I'll... I'll wear it on the insi
 new dialoguePage("Filbert","But, um... thanks. Really. You're very... brave? Yes. That's the word", true),
 
 // 7, neutral
-new dialoguePage("Briea","I get it, King, you're in your mysterious era. I'll save ‘em for someone who's not afraid of decisions."),
+new dialoguePage("Briea","I get it, King, you're in your mysterious era. I'll save 'em for someone who's not afraid of decisions."),
 new dialoguePage("Filbert","Ah... yeah thats erm... Probably smart. Thanks for talking with me.", true),
 
 new dialoguePage("Filbert","Good luck on the race..!"),

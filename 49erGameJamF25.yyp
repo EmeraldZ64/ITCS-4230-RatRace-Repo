@@ -15,9 +15,9 @@
     {"$GMFolder":"","%Name":"Controllers","folderPath":"folders/Objects/Controllers.yy","name":"Controllers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI Stuff","folderPath":"folders/Objects/Controllers/UI Stuff.yy","name":"UI Stuff","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Environment","folderPath":"folders/Objects/Environment.yy","name":"Environment","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Useless","folderPath":"folders/Objects/Useless.yy","name":"Useless","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPC","folderPath":"folders/Objects/NPC.yy","name":"NPC","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Quests","folderPath":"folders/Objects/Quests.yy","name":"Quests","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Useless","folderPath":"folders/Objects/Useless.yy","name":"Useless","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Structs","folderPath":"folders/Scripts/Structs.yy","name":"Structs","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -28,7 +28,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"49erGameJamF25",
   "resources":[
@@ -47,6 +47,7 @@
     {"id":{"name":"obj_NPC2","path":"objects/obj_NPC2/obj_NPC2.yy",},},
     {"id":{"name":"obj_NPC3","path":"objects/obj_NPC3/obj_NPC3.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_qBase","path":"objects/obj_qBase/obj_qBase.yy",},},
     {"id":{"name":"obj_qTutorial","path":"objects/obj_qTutorial/obj_qTutorial.yy",},},
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},},
     {"id":{"name":"obj_treeCollision","path":"objects/obj_treeCollision/obj_treeCollision.yy",},},

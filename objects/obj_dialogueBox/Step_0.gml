@@ -1,6 +1,6 @@
 var _len = string_length(dialogues[current_dialogue].line);
 	
-// if this dialogue is marked as a last line, set accordingly
+// if this dialogue is marked as a last line, set last_dialogue to this dialogue
 if (dialogues[current_dialogue].isEndingLine)
 {
 	last_dialogue = current_dialogue;

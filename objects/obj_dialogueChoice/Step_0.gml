@@ -2,7 +2,7 @@ var indexLastChoice = array_length(dialogueChoices) - 1;
 
 #region HANDLE PLAYER SELECTION INPUTS
 
-if keyboard_check_pressed(vk_down)
+if (keyboard_check_pressed(vk_down)) or (keyboard_check_pressed(ord("S")))
 {
 	if (choice_hovering == indexLastChoice)
 		choice_hovering = 0;
@@ -10,7 +10,7 @@ if keyboard_check_pressed(vk_down)
 		choice_hovering++;
 }
 
-if keyboard_check_pressed(vk_up)
+if (keyboard_check_pressed(vk_up)) or (keyboard_check_pressed(ord("W")))
 {
 	if (choice_hovering == 0)
 		choice_hovering = indexLastChoice;
@@ -21,7 +21,7 @@ if keyboard_check_pressed(vk_up)
 #endregion
 
 // choice was selected
-if keyboard_check_pressed(vk_enter)
+if (keyboard_check_pressed(vk_enter)) or (keyboard_check_pressed(vk_space))
 {	
 	#region HANDLE DIALOGUE NEXT PAGE
 	if (dialogueChoices[choice_hovering].skipToLine != -1)
@@ -50,12 +50,12 @@ if keyboard_check_pressed(vk_enter)
 	if (dialogueChoices[choice_hovering].questAccept != "") and (!global.onQuest)
 	{
 		// parse through all quests in global quest list
-		for (var i = 0; i < ds_list_size(global.ds_allQuests) - 1; i++)
+		for (var i = 0; i < ds_list_size(global.ds_allQuests); i++)
 		{
 			// check if quest name matches name passed with dialogueChoice
 			if (global.ds_allQuests[| i].name == dialogueChoices[choice_hovering].questAccept)
 			{
-				global.ds_allQuests[| i].state = QUESTSTATE.INPROGRESS; // change this
+				global.ds_allQuests[| i].questObj.state = QUESTSTATE.INPROGRESS;
 				global.onQuest = true;
 			}
 		}

@@ -1,5 +1,5 @@
-// create quest struct and pass to allQuest list
-ds_list_add(global.ds_allQuests, new quest(questName, self));
+// Inherit the parent event
+event_inherited();
 
 // quest specific variables
 buttons = 3;

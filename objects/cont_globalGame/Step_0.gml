@@ -1,5 +1,3 @@
-show_debug_message(percentBlue)
-
 if (percentBlue > .60)
 	show_debug_message("successfully checked blue");
 	

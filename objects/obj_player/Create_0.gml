@@ -3,8 +3,8 @@ event_inherited();
 
 //*** MOVEMENT SYSTEM used Badwrong's Movement and Vectors Gamemaker Tutorial
 
-image_xscale *= 2.5;
-image_yscale *= 2.5;
+image_xscale *= .3;
+image_yscale *= .3;
 
 move_speed = 0; // magnitude of vector, in effect
 

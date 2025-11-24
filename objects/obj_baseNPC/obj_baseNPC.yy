@@ -33,7 +33,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"interact_distance","filters":[],"listItems":[],"multiselect":false,"name":"interact_distance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"scale","filters":[],"listItems":[],"multiselect":false,"name":"scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.5","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"scale","filters":[],"listItems":[],"multiselect":false,"name":"scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.35","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

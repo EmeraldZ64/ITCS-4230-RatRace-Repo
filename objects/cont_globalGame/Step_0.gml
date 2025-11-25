@@ -5,3 +5,4 @@ if (percentBlue >= .60) and (obj_player.state != PLAYERSTATES.INDIALOGUE)
 {
 	room_goto_next();
 }
+

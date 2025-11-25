@@ -1,7 +1,11 @@
 globalvar percentBlue; // globalvar is deprecated please change to global. when not a lazybones
 globalvar movesLeft;
+globalvar raceWin;
+globalvar raceLose;
+globalvar atMarket;
 
 percentBlue = .50;
+atMarket = false;
 
 // define values for dialogue scores
 #macro AWFUL -.05

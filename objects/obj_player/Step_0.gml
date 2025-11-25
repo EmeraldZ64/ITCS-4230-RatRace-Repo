@@ -83,3 +83,6 @@ y = clamp(y, 0 + sprite_height, room_height -sprite_height / 2);
 
 // dynamically set depth
 depth = -y;
+
+//TODO: if(atMarket){set x and y to be at market when implemented} this is for after you win the race 
+//so you can talk to cl

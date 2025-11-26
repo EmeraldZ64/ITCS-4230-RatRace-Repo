@@ -1,6 +1,8 @@
 draw_set_font(fnt_dialogue);
 draw_set_halign(fa_left);
 
+draw_sprite_ext(spr_DEPchoiceBox, 0, text_x, text_y, 1.2, 0.5 * array_length(dialogueChoices) , 0, c_white, 1);
+
 // draw text of dialogue choices for each choice
 for (i = 0; i < array_length(dialogueChoices); i++)
 {

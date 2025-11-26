@@ -9,8 +9,8 @@ text_width = 700; // max width before text wrap in dialogue box
 text_x = display_get_gui_width() / 2; // x and y to start drawing text from
 text_y = display_get_gui_height() / 2 + 300;
 
-namecard_offset_x = text_x - 150;
-namecard_offset_y = text_y - 140;
+namecard_offset_x = text_x + 235;
+namecard_offset_y = text_y - 168;
 
 char_current = 1; // iterator across text[text_current] string
 char_speed = 0.5; // how much to iterate by per draw event

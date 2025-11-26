@@ -50,8 +50,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Character",
-    "path":"folders/Sprites/Character.yy",
+    "name":"Briea",
+    "path":"folders/Sprites/Character/Briea.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

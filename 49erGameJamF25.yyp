@@ -113,10 +113,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room_Town","path":"rooms/Room_Town/Room_Town.yy",},},
     {"roomId":{"name":"Room_Demo","path":"rooms/Room_Demo/Room_Demo.yy",},},
     {"roomId":{"name":"Room_DemoEnd","path":"rooms/Room_DemoEnd/Room_DemoEnd.yy",},},
     {"roomId":{"name":"Room_Race","path":"rooms/Room_Race/Room_Race.yy",},},
-    {"roomId":{"name":"Room_Town","path":"rooms/Room_Town/Room_Town.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -1,5 +1,8 @@
 globalvar percentBlue; // globalvar is deprecated please change to global. when not a lazybones
 globalvar movesLeft;
+
+// MOVE THESE TO RACE's QUEST OBJECT WHEN POSSIBLE
+// make them local variables of the quest object
 globalvar raceWin;
 globalvar raceLose;
 globalvar atMarket;

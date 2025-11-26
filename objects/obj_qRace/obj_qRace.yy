@@ -1,19 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_obstacle",
+  "%Name":"obj_qRace",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player_race","path":"objects/obj_player_race/obj_player_race.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_obstacle",
-  "overriddenProperties":[],
+  "name":"obj_qRace",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_qBase","path":"objects/obj_qBase/obj_qBase.yy",},"propertyId":{"name":"questName","path":"objects/obj_qBase/obj_qBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Race",},
+  ],
   "parent":{
-    "name":"RaceObjs",
-    "path":"folders/Objects/Quests/RaceObjs.yy",
+    "name":"Quests",
+    "path":"folders/Objects/Quests.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_qBase",
+    "path":"objects/obj_qBase/obj_qBase.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_obstacle",
-    "path":"sprites/spr_obstacle/spr_obstacle.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

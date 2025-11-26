@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"RaceObjs",
-    "path":"folders/Objects/RaceObjs.yy",
+    "path":"folders/Objects/Quests/RaceObjs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

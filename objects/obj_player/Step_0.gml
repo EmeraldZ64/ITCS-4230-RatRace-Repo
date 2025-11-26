@@ -77,12 +77,40 @@ if (place_meeting(x, y + vspeed, obj_baseCollision)) // HANDLE VERTICAL CHECK
 }
 #endregion
 
+#region DETERMINE SPRITE TO DISPLAY FOR PLAYER BASED ON CURRENT MOVEMENT
+if (hspeed < 0) and (abs(hspeed) > abs(vspeed))
+{
+	sprite_index = spr_brieaWalkE;
+	image_xscale = scale * -1;
+}
+else if (hspeed > 0) and (abs(hspeed) > abs(vspeed))
+{
+	sprite_index = spr_brieaWalkE;
+	image_xscale = scale;
+}
+else if (vspeed > 0)
+{
+	sprite_index = spr_brieaWalkS;
+}
+else if (vspeed < 0)
+{
+	sprite_index = spr_brieaWalkN;
+}
+else if (vspeed == 0) and (hspeed == 0)
+{
+	sprite_index = spr_briea;
+}
+#endregion
+
 // keep player from leaving gamemaker room space
 x = clamp(x, 0, room_width - sprite_width / 2);
 y = clamp(y, 0 + sprite_height, room_height -sprite_height / 2);
 
 // dynamically set depth
 depth = -y;
+
+// keep hitbox consistent no matter the sprite
+mask_index = spr_briea;
 
 //TODO: if(atMarket){set x and y to be at market when implemented} this is for after you win the race 
 //so you can talk to cl

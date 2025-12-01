@@ -6,3 +6,5 @@ image_yscale *= scale;
 
 interactible = false;
 has_interacted = false;
+
+depth = -y;

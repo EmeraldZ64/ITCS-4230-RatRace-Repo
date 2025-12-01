@@ -14,10 +14,7 @@
     "name":"NPC",
     "path":"folders/Objects/NPC.yy",
   },
-  "parentObjectId":{
-    "name":"obj_baseDepthParent",
-    "path":"objects/obj_baseDepthParent/obj_baseDepthParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -37,7 +34,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_npc",
     "path":"sprites/spr_npc/spr_npc.yy",

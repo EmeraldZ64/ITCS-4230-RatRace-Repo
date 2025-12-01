@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_DEPfilbert",
-    "path":"sprites/spr_DEPfilbert/spr_DEPfilbert.yy",
+    "name":"spr_filbert",
+    "path":"sprites/spr_filbert/spr_filbert.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_DEPmontyjack",
-    "path":"sprites/spr_DEPmontyjack/spr_DEPmontyjack.yy",
+    "name":"spr_montyjack",
+    "path":"sprites/spr_montyjack/spr_montyjack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

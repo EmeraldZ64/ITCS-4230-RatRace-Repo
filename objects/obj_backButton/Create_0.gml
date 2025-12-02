@@ -1,1 +1,0 @@
-//Reset all global variables and reset all rooms here

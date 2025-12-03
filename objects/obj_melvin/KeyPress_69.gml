@@ -4,7 +4,7 @@ new dialoguePage("Melvin", "Well, if it isn't my friend Briea. What brings you d
 new dialoguePage("Briea", "Well, you see, I'm giving out these epic campaign buttons!"),
 new dialoguePage("Melvin", "I don't need a button for you to know you got my vote."),
 new dialoguePage("Melvin", "If you got a crumb of cheese, I'll be happy to take it off your paws, though. A shiny button wouldn't be too bad either, I guess.",
-false, -1, 
+, , 
 [
 new dialogueChoice("Give Button", 4, GREAT),
 new dialogueChoice("Keep Button", 6)
@@ -28,19 +28,22 @@ new dialoguePage("Melvin", "Hey Briea!")
 
 show_debug_message(global.currentQuest);
 
-if (global.currentQuest == "Tutorial")
+if (obj_player.can_interact)
 {
-	if (interactible) and (obj_player.can_interact) and (!has_interacted)
+	if (global.currentQuest == "Tutorial")
 	{
-		display_dialogue(TutorialDialogue);
-		has_interacted = true;
+		if (interactible) and (!has_interacted)
+		{
+			display_dialogue(TutorialDialogue);
+			has_interacted = true;
+		}
+		else if (interactible) and (obj_player.can_interact) and (has_interacted)
+		{
+			display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 1);
+		}
 	}
-	else if (interactible) and (obj_player.can_interact) and (has_interacted)
+	else
 	{
-		display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 1);
+		display_dialogue(Dialogue);
 	}
-}
-else
-{
-	display_dialogue(Dialogue);
 }

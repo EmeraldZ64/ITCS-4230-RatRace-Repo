@@ -2,6 +2,8 @@ var dist, input_x, input_y, velocity_x, velocity_y;
 
 if (state == PLAYERSTATES.ROAMING)
 {
+	can_interact = true;
+	
 	#region HANDLE SPEED AND MOVEMENT INPUT
 
 	// get the input directions
@@ -54,6 +56,7 @@ else if (state == PLAYERSTATES.INDIALOGUE)
 {
 	hspeed = 0;
 	vspeed = 0;
+	can_interact = false;
 }
 
 #region HANDLE PLAYER MOVEMENT FOR STATIC COLLISION OBJECTS

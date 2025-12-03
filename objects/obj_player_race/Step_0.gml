@@ -16,3 +16,5 @@ if (global.raceWin){
 	global.atMarket = true;
 	room_goto(Room_Demo);
 }
+
+depth = -y;

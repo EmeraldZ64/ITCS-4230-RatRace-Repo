@@ -14,7 +14,10 @@
     "name":"NPC",
     "path":"folders/Objects/NPC.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_baseCollision",
+    "path":"objects/obj_baseCollision/obj_baseCollision.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

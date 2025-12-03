@@ -1,3 +1,4 @@
+
 // draw background (outline and red)
 draw_sprite_ext(spr_barRed, 0, bar_x, bar_y, 1, 1, 0, c_white, 1);
 

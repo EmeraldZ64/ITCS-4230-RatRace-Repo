@@ -3,6 +3,7 @@ event_inherited();
 
 // quest specific variables
 buttons = 3;
+introDone = false;
 
 // quest methods, can be called anywhere in code
 giveButton = function()

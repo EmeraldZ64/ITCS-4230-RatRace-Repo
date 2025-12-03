@@ -7,7 +7,9 @@ globalvar raceWin;
 globalvar raceLose;
 globalvar atMarket;
 
-percentBlue = .50;
+global.gameStarted = false;
+
+percentBlue = .40;
 atMarket = false;
 
 // define values for dialogue scores
@@ -17,4 +19,4 @@ atMarket = false;
 #macro GOOD .02
 #macro GREAT .05
 
-instance_create_layer(0, 0, "GUI", obj_voteBar);
+window_set_size( 1920, 1080 );

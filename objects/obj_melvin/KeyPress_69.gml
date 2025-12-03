@@ -1,4 +1,4 @@
-var Dialogue =
+var TutorialDialogue =
 [
 new dialoguePage("Melvin", "Well, if it isn't my friend Briea. What brings you down to my humble dirt palace?"),
 new dialoguePage("Briea", "Well, you see, I'm giving out these epic campaign buttons!"),
@@ -21,12 +21,26 @@ new dialoguePage("Melvin","That's okay, just don't forget about me when you beco
 new dialoguePage("Melvin","Go get 'em, Briea!", true)
 ]
 
-if (interactible) and (obj_player.can_interact) and (!has_interacted)
+var Dialogue =
+[
+new dialoguePage("Melvin", "Hey Briea!")
+]
+
+show_debug_message(global.currentQuest);
+
+if (global.currentQuest == "Tutorial")
+{
+	if (interactible) and (obj_player.can_interact) and (!has_interacted)
+	{
+		display_dialogue(TutorialDialogue);
+		has_interacted = true;
+	}
+	else if (interactible) and (obj_player.can_interact) and (has_interacted)
+	{
+		display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 1);
+	}
+}
+else
 {
 	display_dialogue(Dialogue);
-	has_interacted = true;
-}
-else if (interactible) and (obj_player.can_interact) and (has_interacted)
-{
-	display_dialogue(Dialogue, array_length(Dialogue) - 1);
 }

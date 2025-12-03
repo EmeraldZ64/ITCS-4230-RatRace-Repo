@@ -57,6 +57,7 @@ if (keyboard_check_pressed(vk_enter)) or (keyboard_check_pressed(vk_space))
 			{
 				global.ds_allQuests[| i].questObj.state = QUESTSTATE.INPROGRESS;
 				global.onQuest = true;
+				global.currentQuest = dialogueChoices[choice_hovering].questAccept;
 			}
 		}
 	}

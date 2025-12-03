@@ -1,4 +1,4 @@
-var Dialogue =
+var TutorialDialogue =
 [
 new dialoguePage("Filbert","Oh! erm... Miss Briea! Sorry... you erm startled me. I was, uh, just filling out this form... about losing a form... It's fine... Everything's fine."),
 new dialoguePage("Briea","Aww, relax, Filbert, I'm not here to bust you on bad paperwork. I'm just handing out these swag buttons. Spreading the Brieagenda ya'know."),
@@ -22,13 +22,15 @@ new dialoguePage("Filbert","Ah... yeah thats erm... Probably smart. Thanks for t
 new dialoguePage("Filbert","Good luck on the race..!"),
 new dialoguePage("Filbert","(...Am I allowed to say that?)", true)
 ]
-
-if (interactible) and (obj_player.can_interact) and (!has_interacted)
+if (global.currentQuest == "Tutorial")
 {
-	display_dialogue(Dialogue);
-	has_interacted = true;
-}
-else if (interactible) and (obj_player.can_interact) and (has_interacted)
-{
-	display_dialogue(Dialogue, array_length(Dialogue) - 2);
+	if (interactible) and (obj_player.can_interact) and (!has_interacted)
+	{
+		display_dialogue(TutorialDialogue);
+		has_interacted = true;
+	}
+	else if (interactible) and (obj_player.can_interact) and (has_interacted)
+	{
+		display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 2);
+	}
 }

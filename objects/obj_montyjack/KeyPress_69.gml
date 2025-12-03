@@ -1,4 +1,4 @@
-var Dialogue =
+var TutorialDialogue =
 [
 new dialoguePage("Monty Jack","If it isn't Briea. Out here spreading propaganda again?"),
 new dialoguePage("Briea","Propaganda? Girl, please, Ric Otto's the one spreading lies and hate..."),
@@ -21,13 +21,15 @@ new dialoguePage("Monty Jack","Smart move, don't know who'd want that trash thou
 
 new dialoguePage("Briea", "Better spend my time on some more open minded people...", true)
 ]
-
-if (interactible) and (obj_player.can_interact) and (!has_interacted)
+if (global.currentQuest == "Tutorial")
 {
-	display_dialogue(Dialogue);
-	has_interacted = true;
-}
-else if (interactible) and (obj_player.can_interact) and (has_interacted)
-{
-	display_dialogue(Dialogue, array_length(Dialogue) - 1);
+	if (interactible) and (obj_player.can_interact) and (!has_interacted)
+	{
+		display_dialogue(TutorialDialogue);
+		has_interacted = true;
+	}
+	else if (interactible) and (obj_player.can_interact) and (has_interacted)
+	{
+		display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 1);
+	}
 }

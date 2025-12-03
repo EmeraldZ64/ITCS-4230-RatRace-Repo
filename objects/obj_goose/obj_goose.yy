@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"questTest",
+  "%Name":"obj_goose",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":69,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"questTest",
+  "name":"obj_goose",
   "overriddenProperties":[],
   "parent":{
-    "name":"Useless",
-    "path":"folders/Objects/Useless.yy",
+    "name":"NPC",
+    "path":"folders/Objects/NPC.yy",
   },
   "parentObjectId":{
     "name":"obj_baseNPC",
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc",
-    "path":"sprites/spr_npc/spr_npc.yy",
+    "name":"spr_goose",
+    "path":"sprites/spr_goose/spr_goose.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -58,6 +58,7 @@
     {"id":{"name":"obj_dialogueChoice","path":"objects/obj_dialogueChoice/obj_dialogueChoice.yy",},},
     {"id":{"name":"obj_filbert","path":"objects/obj_filbert/obj_filbert.yy",},},
     {"id":{"name":"obj_finish","path":"objects/obj_finish/obj_finish.yy",},},
+    {"id":{"name":"obj_goose","path":"objects/obj_goose/obj_goose.yy",},},
     {"id":{"name":"obj_htpButton","path":"objects/obj_htpButton/obj_htpButton.yy",},},
     {"id":{"name":"obj_melvin","path":"objects/obj_melvin/obj_melvin.yy",},},
     {"id":{"name":"obj_montyjack","path":"objects/obj_montyjack/obj_montyjack.yy",},},

@@ -6,7 +6,7 @@ new dialoguePage("Filbert","Erm... They look real nice, but... uh, it's just-"),
 new dialoguePage("Filbert","I'm trying to stay neutral. Ya'know Ric Otto's got the experience, but you've got the energy. So much energy... Maybe too much? No! Just much...",
 false, -1,
 [
-new dialogueChoice("Give Button", 4, GREAT),
+new dialogueChoice("Give Button", 4, GREAT, , obj_qTutorial.giveButton),
 new dialogueChoice("Keep Button", 7)
 ]
 ),

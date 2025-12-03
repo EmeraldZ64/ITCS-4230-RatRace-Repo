@@ -7,7 +7,7 @@ new dialoguePage("Monty Jack","Well, feel free to skip me, I'd much rather sport
 new dialoguePage("Monty Jack","He's a real rat of the rodents- Providing more than just big flashy promises with no results.",
 false, -1,
 [
-new dialogueChoice("Give Button", 5, GOOD),
+new dialogueChoice("Give Button", 5, GOOD, , obj_qTutorial.giveButton),
 new dialogueChoice("Keep Button", 7, BAD)
 ]
 ),

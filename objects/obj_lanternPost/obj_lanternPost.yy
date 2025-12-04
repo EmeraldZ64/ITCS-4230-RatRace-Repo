@@ -1,16 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_montyjack",
+  "%Name":"obj_lanternPost",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":69,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_montyjack",
-  "overriddenProperties":[],
+  "name":"obj_lanternPost",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_baseCollision","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"propertyId":{"name":"scale","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
+  ],
   "parent":{
-    "name":"NPC",
-    "path":"folders/Objects/NPC.yy",
+    "name":"Interact Props",
+    "path":"folders/Objects/NPC/Interact Props.yy",
   },
   "parentObjectId":{
     "name":"obj_baseNPC",
@@ -34,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_montyjack",
-    "path":"sprites/spr_montyjack/spr_montyjack.yy",
+    "name":"spr_lanternPost",
+    "path":"sprites/spr_lanternPost/spr_lanternPost.yy",
   },
   "spriteMaskId":null,
   "visible":true,

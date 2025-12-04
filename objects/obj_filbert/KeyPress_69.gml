@@ -22,15 +22,19 @@ new dialoguePage("Filbert","Ah... yeah thats erm... Probably smart. Thanks for t
 new dialoguePage("Filbert","Good luck on the race..!"),
 new dialoguePage("Filbert","(...Am I allowed to say that?)", true)
 ]
-if (global.currentQuest == "Tutorial")
+
+if (obj_player.can_interact) and (interactible)
 {
-	if (interactible) and (obj_player.can_interact) and (!has_interacted)
+	if (global.currentQuest == "Tutorial")
 	{
-		display_dialogue(TutorialDialogue);
-		has_interacted = true;
-	}
-	else if (interactible) and (obj_player.can_interact) and (has_interacted)
-	{
-		display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 2);
+		if (!has_interacted)
+		{
+			display_dialogue(TutorialDialogue);
+			has_interacted = true;
+		}
+		else if (has_interacted)
+		{
+			display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 2);
+		}
 	}
 }

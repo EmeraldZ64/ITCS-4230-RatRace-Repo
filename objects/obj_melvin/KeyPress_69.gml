@@ -6,7 +6,7 @@ new dialoguePage("Melvin", "I don't need a button for you to know you got my vot
 new dialoguePage("Melvin", "If you got a crumb of cheese, I'll be happy to take it off your paws, though. A shiny button wouldn't be too bad either, I guess.",
 , , 
 [
-new dialogueChoice("Give Button", 4, GREAT, obj_qTutorial.giveButton),
+new dialogueChoice("Give Button", 4, GREAT, , obj_qTutorial.giveButton),
 new dialogueChoice("Keep Button", 6)
 ]
 ),
@@ -26,16 +26,16 @@ var Dialogue =
 new dialoguePage("Melvin", "Hey Briea!")
 ]
 
-if (obj_player.can_interact)
+if (obj_player.can_interact) and (interactible)
 {
 	if (global.currentQuest == "Tutorial")
 	{
-		if (interactible) and (!has_interacted)
+		if (!has_interacted)
 		{
 			display_dialogue(TutorialDialogue);
 			has_interacted = true;
 		}
-		else if (interactible) and (obj_player.can_interact) and (has_interacted)
+		else if (has_interacted)
 		{
 			display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 1);
 		}

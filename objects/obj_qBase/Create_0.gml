@@ -8,3 +8,10 @@ enum QUESTSTATE
 	INPROGRESS = 1,
 	COMPLETE = 2
 }
+
+completeQuest = function()
+{
+	state = QUESTSTATE.COMPLETE;
+	global.currentQuest = "";
+	global.onQuest = false;
+}

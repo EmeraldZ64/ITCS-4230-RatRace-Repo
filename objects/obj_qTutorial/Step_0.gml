@@ -25,11 +25,9 @@ if (state != QUESTSTATE.COMPLETE)
 	if (buttons < 1) and (obj_player.state == PLAYERSTATES.ROAMING)
 	{
 		display_dialogue(EndQuest)
-		state = QUESTSTATE.COMPLETE;
-		global.currentQuest = "";
-		global.onQuest = false;
+		completeQuest();
 	}
 }
 
-show_debug_message("Buttons: {0}", buttons);
-show_debug_message("State: {0}", state);
+//show_debug_message("Buttons: {0}", buttons);
+//show_debug_message("State: {0}", state);

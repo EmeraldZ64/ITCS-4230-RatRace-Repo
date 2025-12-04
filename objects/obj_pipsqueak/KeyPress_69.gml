@@ -9,13 +9,16 @@ new dialoguePage("Pipsqueak","busting it down ya cut g roblox grimace shake coll
 new dialoguePage("Pipsqueak","67")
 ]
 
-if (interactible) and (obj_player.can_interact) and (!has_interacted)
+if (obj_player.can_interact) and (interactible)
 {
-	display_dialogue(Dialogue);
-	has_interacted = true;
-}
-else if (interactible) and (obj_player.can_interact) and (has_interacted)
-{
-	display_dialogue(Dialogue, array_length(Dialogue) - 1);
-	has_interacted = true;
+	if (!has_interacted)
+	{
+		display_dialogue(Dialogue);
+		has_interacted = true;
+	}
+	else if (has_interacted)
+	{
+		display_dialogue(Dialogue, array_length(Dialogue) - 1);
+		has_interacted = true;
+	}
 }

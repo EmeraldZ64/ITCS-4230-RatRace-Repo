@@ -1,3 +1,4 @@
+#region Tutorial Dialogue
 var TutorialDialogue =
 [
 new dialoguePage("Monty Jack","If it isn't Briea. Out here spreading propaganda again?"),
@@ -21,6 +22,9 @@ new dialoguePage("Monty Jack","Smart move, don't know who'd want that trash thou
 
 new dialoguePage("Briea", "Better spend my time on some more open minded people...", true)
 ]
+#endregion
+
+
 if (global.currentQuest == "Tutorial")
 {
 	if (interactible) and (obj_player.can_interact) and (!has_interacted)
@@ -32,4 +36,8 @@ if (global.currentQuest == "Tutorial")
 	{
 		display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 1);
 	}
+}
+else if (global.currentQuest == "Lanterns")
+{
+	
 }

@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_baseCollision",
+  "%Name":"obj_burrow",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_baseCollision",
+  "name":"obj_burrow",
   "overriddenProperties":[],
   "parent":{
     "name":"Environment",
     "path":"folders/Objects/Environment.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_baseCollision",
+    "path":"objects/obj_baseCollision/obj_baseCollision.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -26,13 +28,14 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"scale","filters":[],"listItems":[],"multiselect":false,"name":"scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.5","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_burrow",
+    "path":"sprites/spr_burrow/spr_burrow.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

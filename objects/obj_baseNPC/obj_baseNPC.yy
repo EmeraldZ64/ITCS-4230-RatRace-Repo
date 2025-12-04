@@ -9,7 +9,9 @@
   ],
   "managed":true,
   "name":"obj_baseNPC",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_baseCollision","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"propertyId":{"name":"scale","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.35",},
+  ],
   "parent":{
     "name":"NPC",
     "path":"folders/Objects/NPC.yy",
@@ -33,7 +35,6 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"interact_distance","filters":[],"listItems":[],"multiselect":false,"name":"interact_distance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"scale","filters":[],"listItems":[],"multiselect":false,"name":"scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.35","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

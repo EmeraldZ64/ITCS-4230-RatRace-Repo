@@ -18,7 +18,7 @@ if (interactible) and (obj_player.can_interact)
 {
 	if (obj_qStorage.state == QUESTSTATE.COMPLETE)
 	{
-		if (obj_qStorage.playerWonStorage)
+		if (global.playerWonStorage)
 		{
 			display_dialogue(StorageQuestDone);
 		}

@@ -9,7 +9,7 @@
   "managed":true,
   "name":"obj_storagePile",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_baseCollision","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"propertyId":{"name":"scale","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_baseCollision","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"propertyId":{"name":"scale","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.4",},
   ],
   "parent":{
     "name":"Interact Props",

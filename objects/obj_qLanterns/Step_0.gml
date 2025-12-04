@@ -23,5 +23,5 @@ if (state != QUESTSTATE.COMPLETE)
 	}
 }
 
-show_debug_message("Lanterns Done: {0}", numLanterns);
-show_debug_message("State: {0}", state);
+//show_debug_message("Lanterns Done: {0}", numLanterns);
+//show_debug_message("Lanterns State: {0}", state);

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"report_result",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"report_result",
+  "parent":{
+    "name":"StorageScripts",
+    "path":"folders/Scripts/StorageScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

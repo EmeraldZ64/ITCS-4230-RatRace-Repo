@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sort_fail_check",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sort_fail_check",
+  "parent":{
+    "name":"StorageScripts",
+    "path":"folders/Scripts/StorageScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

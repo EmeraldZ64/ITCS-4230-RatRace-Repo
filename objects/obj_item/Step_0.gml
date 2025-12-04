@@ -55,8 +55,10 @@ else
         {
             report_result(true);
             instance_destroy();
-        }
-        else
+        }else if (place_meeting(x, y, obj_boxNuts) || place_meeting(x, y, obj_boxBerries) || place_meeting(x, y, obj_boxSeeds)) {
+			report_result(false);
+			instance_destroy();
+		}else
         {
 			//DROPPED OUTSIDE BOX → snap back
             x = 670;

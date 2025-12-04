@@ -20,6 +20,7 @@
     {"$GMFolder":"","%Name":"Quests","folderPath":"folders/Objects/Quests.yy","name":"Quests","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"RLGLObjs","folderPath":"folders/Objects/Quests/RLGLObjs.yy","name":"RLGLObjs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"RaceObjs","folderPath":"folders/Objects/Quests/RaceObjs.yy","name":"RaceObjs","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"RLGLObjs","folderPath":"folders/Objects/Quests/RLGLObjs.yy","name":"RLGLObjs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"StorageObjs","folderPath":"folders/Objects/Quests/StorageObjs.yy","name":"StorageObjs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"StartScreen","folderPath":"folders/Objects/StartScreen.yy","name":"StartScreen","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Useless","folderPath":"folders/Objects/Useless.yy","name":"Useless","resourceType":"GMFolder","resourceVersion":"2.0",},

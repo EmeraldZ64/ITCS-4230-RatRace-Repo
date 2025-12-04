@@ -26,5 +26,5 @@ if (state != QUESTSTATE.COMPLETE) and (global.playerFinishedStorage)
 	}
 }
 
-show_debug_message("playerWonStorage: {0}", global.playerWonStorage);
-show_debug_message("Storage State: {0}", state);
+//show_debug_message("playerWonStorage: {0}", global.playerWonStorage);
+//show_debug_message("Storage State: {0}", state);

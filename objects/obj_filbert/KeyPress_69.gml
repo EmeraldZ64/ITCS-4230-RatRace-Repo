@@ -1,3 +1,4 @@
+#region Tutorial Dialogue
 var TutorialDialogue =
 [
 new dialoguePage("Filbert","Oh! erm... Miss Briea! Sorry... you erm startled me. I was, uh, just filling out this form... about losing a form... It's fine... Everything's fine."),
@@ -6,7 +7,7 @@ new dialoguePage("Filbert","Erm... They look real nice, but... uh, it's just-"),
 new dialoguePage("Filbert","I'm trying to stay neutral. Ya'know Ric Otto's got the experience, but you've got the energy. So much energy... Maybe too much? No! Just much...",
 false, -1,
 [
-new dialogueChoice("Give Button", 4, GREAT, , obj_qTutorial.giveButton),
+new dialogueChoice("Give Button", 4, GREAT, , function() {obj_qTutorial.giveButton("Filbert")}),
 new dialogueChoice("Keep Button", 7)
 ]
 ),
@@ -17,11 +18,33 @@ new dialoguePage("Filbert","But, um... thanks. Really. You're very... brave? Yes
 
 // 7, neutral
 new dialoguePage("Briea","I get it, King, you're in your mysterious era. I'll save 'em for someone who's not afraid of decisions."),
-new dialoguePage("Filbert","Ah... yeah thats erm... Probably smart. Thanks for talking with me.", true),
-
-new dialoguePage("Filbert","Good luck on the race..!"),
-new dialoguePage("Filbert","(...Am I allowed to say that?)", true)
+new dialoguePage("Filbert","Ah... yeah thats erm... Probably smart. Thanks for talking with me.", true)
 ]
+
+var TutorialLater = 
+[
+	new dialoguePage("Filbert","Oh! Hello... again... Urm, did... did you need something else? I'm... err, happy to help. Hehe.", , ,
+	[
+		new dialogueChoice("Give Button", 1, GREAT, , function() {obj_qTutorial.giveButton("Filbert")}),
+		new dialogueChoice("Keep Button", 4)
+	]),
+	
+	// 1 - gave button
+	new dialoguePage("Briea","How about you help me show off my swag merch!"),
+	new dialoguePage("Filbert","Oh! Well... I erm still don't want anyone to think I'm biased... But I did offer to help..."),
+	new dialoguePage("Filbert","...oh man. I um, guess I'll take it. Thanks...", true),
+	
+	// 4 - did not give
+	new dialoguePage("Briea","No thanks, Filbert. Just stopping by."),
+	new dialoguePage("Filbert","Ah! Well, that's... awfully kind of you, Miss Briea. I mean, stopping by. Hehe, don't get many visitors."),
+	new dialoguePage("Filbert","Other than Emment... He's real nice too. Hehe...", true)
+]
+
+var GaveAButton = 
+[
+	new dialoguePage("Briea","(I still have some buttons to give away...)")
+]
+#endregion
 
 if (obj_player.can_interact) and (interactible)
 {
@@ -32,9 +55,14 @@ if (obj_player.can_interact) and (interactible)
 			display_dialogue(TutorialDialogue);
 			has_interacted = true;
 		}
-		else if (has_interacted)
+		else if (ds_list_find_index(obj_qTutorial.ds_list_NPCsWithButtons, "Filbert") != -1) // melvin was given a button
 		{
-			display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 2);
+			was_given_button = true;
+			display_dialogue(GaveAButton);
+		}
+		else if (!was_given_button)
+		{
+			display_dialogue(TutorialLater);
 		}
 	}
 }

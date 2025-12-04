@@ -8,7 +8,7 @@ new dialoguePage("Monty Jack","Well, feel free to skip me, I'd much rather sport
 new dialoguePage("Monty Jack","He's a real rat of the rodents- Providing more than just big flashy promises with no results.",
 false, -1,
 [
-new dialogueChoice("Give Button", 5, GOOD, , obj_qTutorial.giveButton),
+new dialogueChoice("Give Button", 5, GOOD, , function(){obj_qTutorial.giveButton("Monty Jack")}),
 new dialogueChoice("Keep Button", 7, BAD)
 ]
 ),
@@ -18,9 +18,28 @@ new dialoguePage("Monty Jack","Hmph... Fine, I'll take it. Only so I can ironica
 
 // 7, neutral
 new dialoguePage("Briea","Fine. I'll save my swag for someone less lame."),
-new dialoguePage("Monty Jack","Smart move, don't know who'd want that trash though...", true),
+new dialoguePage("Monty Jack","Smart move, don't know who'd want that trash, though...", true)
+]
 
-new dialoguePage("Briea", "Better spend my time on some more open minded people...", true)
+var TutorialLater = 
+[
+	new dialoguePage("Monty Jack","Ah, Briea is back. Care to share a word or two for my readers?", , ,
+	[
+		new dialogueChoice("Give Button", 1, GOOD, , function(){obj_qTutorial.giveButton("Monty Jack")}),
+		new dialogueChoice("Keep Button", 4)
+	]),
+	
+	new dialoguePage("Briea","How 'bout one of my buttons instead?"),
+	new dialoguePage("Briea","You take it, and I promise when I win I'll give you an exclusive interview!"),
+	new dialoguePage("Monty Jack","Hmmm, well I do love an exclusive. Don't expect me to wear it, though ~", true),
+	
+	new dialoguePage("Briea","How 'bout tell them I'm here to make a better burrow for every rodent!"),
+	new dialoguePage("Monty Jack","That's it? I'll never sell a story that boring.", true)
+]
+
+var GaveAButton = 
+[
+	new dialoguePage("Briea","(I still have some buttons to give away...)")
 ]
 #endregion
 
@@ -75,9 +94,15 @@ if (obj_player.can_interact) and (interactible)
 			display_dialogue(TutorialDialogue);
 			has_interacted = true;
 		}
-		else if (has_interacted)
+		// npc was given a button
+		else if (ds_list_find_index(obj_qTutorial.ds_list_NPCsWithButtons, "Monty Jack") != -1)
 		{
-			display_dialogue(TutorialDialogue, array_length(TutorialDialogue) - 1);
+			was_given_button = true;
+			display_dialogue(GaveAButton);
+		}
+		else if (!was_given_button)
+		{
+			display_dialogue(TutorialLater);
 		}
 	}
 	else if (global.currentQuest == "Lanterns")

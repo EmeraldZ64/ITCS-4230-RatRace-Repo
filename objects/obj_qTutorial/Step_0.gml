@@ -29,5 +29,6 @@ if (state != QUESTSTATE.COMPLETE)
 	}
 }
 
-//show_debug_message("Buttons: {0}", buttons);
-//show_debug_message("Tutorial State: {0}", state);
+show_debug_message("Buttons: {0}", buttons);
+show_debug_message("Tutorial State: {0}", state);
+show_debug_message("Given button: {0}", ds_list_NPCsWithButtons);

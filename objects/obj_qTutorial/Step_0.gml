@@ -29,5 +29,5 @@ if (state != QUESTSTATE.COMPLETE)
 	}
 }
 
-//show_debug_message("Buttons: {0}", buttons);
-//show_debug_message("State: {0}", state);
+show_debug_message("Buttons: {0}", buttons);
+show_debug_message("State: {0}", state);

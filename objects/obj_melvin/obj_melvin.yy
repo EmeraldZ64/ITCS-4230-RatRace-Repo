@@ -6,7 +6,9 @@
   ],
   "managed":true,
   "name":"obj_melvin",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_baseNPC","path":"objects/obj_baseNPC/obj_baseNPC.yy",},"propertyId":{"name":"collision_sprite","path":"objects/obj_baseNPC/obj_baseNPC.yy",},"resource":{"name":"spr_melvin_collision","path":"sprites/spr_melvin_collision/spr_melvin_collision.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_melvin_collision",},
+  ],
   "parent":{
     "name":"NPC",
     "path":"folders/Objects/NPC.yy",

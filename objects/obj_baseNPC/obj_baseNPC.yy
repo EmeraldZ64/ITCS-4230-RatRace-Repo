@@ -35,6 +35,9 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"interact_distance","filters":[],"listItems":[],"multiselect":false,"name":"interact_distance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"collision_sprite","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"collision_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

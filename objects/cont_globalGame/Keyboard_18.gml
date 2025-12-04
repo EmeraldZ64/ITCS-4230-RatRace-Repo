@@ -16,4 +16,5 @@ if(keyboard_check_pressed(ord("I"))){
 	room_goto(Room_Sneak)
 }else if(keyboard_check_pressed(ord("Y"))){
 	room_goto(Room_Lose)
-}
+}else if (keyboard_check_pressed(ord("X")))
+	obj_qTutorial.buttons = 0;

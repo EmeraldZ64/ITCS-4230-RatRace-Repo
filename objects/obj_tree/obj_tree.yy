@@ -6,8 +6,8 @@
   "name":"obj_tree",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"Useless",
+    "path":"folders/Objects/Useless.yy",
   },
   "parentObjectId":{
     "name":"obj_baseDepthParent",

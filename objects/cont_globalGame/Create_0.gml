@@ -1,5 +1,5 @@
 globalvar percentBlue; // globalvar is deprecated please change to global. when not a lazybones
-globalvar movesLeft;
+global.movesLeft = 5;
 
 // GLOBAL VARIABLES FOR RACE QUEST
 globalvar raceWin;
@@ -9,7 +9,6 @@ globalvar atMarket;
 // GLOBAL VARIABLES FOR STORAGE QUEST
 global.playerWonStorage = false;
 global.playerFinishedStorage = false;
-
 
 global.gameStarted = false;
 

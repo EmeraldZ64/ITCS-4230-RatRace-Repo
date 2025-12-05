@@ -6,6 +6,8 @@ function string_wrap(_text, _width)
 	var space = -1
 	var char_pos = 1;
 	
+	//show_debug_message("width in wrap function: {0}", _width);
+	
 	// loop until end of _text
 	while (char_pos < string_length(_text))
 	{
@@ -18,7 +20,7 @@ function string_wrap(_text, _width)
 			
 			// remove text in string from before given line break, while loop will iterate through new start
 			_text = string_copy(_text, space + 1, string_length(_text) - space);
-			char_pos = 1;	
+			char_pos = 1;
 			space = -1;
 		}
 		

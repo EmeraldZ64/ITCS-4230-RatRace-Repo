@@ -9,6 +9,7 @@
   "name":"obj_montyjack",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_baseNPC","path":"objects/obj_baseNPC/obj_baseNPC.yy",},"propertyId":{"name":"collision_sprite","path":"objects/obj_baseNPC/obj_baseNPC.yy",},"resource":{"name":"spr_montyjack_collision","path":"sprites/spr_montyjack_collision/spr_montyjack_collision.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_montyjack_collision",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_baseNPC","path":"objects/obj_baseNPC/obj_baseNPC.yy",},"propertyId":{"name":"interact_distance","path":"objects/obj_baseNPC/obj_baseNPC.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"80",},
   ],
   "parent":{
     "name":"NPC",

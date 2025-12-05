@@ -19,7 +19,7 @@
     "name":"obj_qBase",
     "path":"objects/obj_qBase/obj_qBase.yy",
   },
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,

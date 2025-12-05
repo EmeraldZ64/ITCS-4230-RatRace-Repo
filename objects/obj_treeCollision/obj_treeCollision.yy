@@ -6,8 +6,8 @@
   "name":"obj_treeCollision",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"Useless",
+    "path":"folders/Objects/Useless.yy",
   },
   "parentObjectId":{
     "name":"obj_baseCollision",

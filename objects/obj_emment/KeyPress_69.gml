@@ -45,6 +45,11 @@ var GaveAButton =
 ]
 #endregion
 
+var DefaultDialogue = 
+[
+	new dialoguePage("Emment", "...")
+]
+
 if (obj_player.can_interact) and (interactible)
 {
 	if (global.currentQuest == "Tutorial")

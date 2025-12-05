@@ -13,9 +13,11 @@ function display_dialogue(_dialogue, _startingLine = 0)
 			inst.dialogues = _dialogue;
 			inst.last_dialogue = array_length(_dialogue) - 1;
 			inst.current_dialogue = _startingLine;
-		
+			
 			// pre-wrap first dialogue passed to dialogue box instance
-			inst.dialogues[inst.current_dialogue].line = string_wrap(inst.dialogues[inst.current_dialogue].line, inst.text_width);
+			inst.dialogues[inst.current_dialogue].line = string_wrap(inst.dialogues[inst.current_dialogue].line, inst.text_width * 1.3);
+			
+			//show_debug_message("width in display function: {0}", inst.text_width);
 		}
 		else // May Never Happen?
 		{

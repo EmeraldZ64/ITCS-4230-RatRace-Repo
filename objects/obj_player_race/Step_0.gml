@@ -14,7 +14,7 @@ if (global.raceWin){
 	global.percentBlue += GREAT;
 	global.raceWin = false;
 	global.atMarket = true;
-	room_goto(Room_Demo);
+	room_goto(Room_Town);
 }
 
 depth = -y;

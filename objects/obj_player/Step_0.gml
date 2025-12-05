@@ -106,8 +106,8 @@ else if (vspeed == 0) and (hspeed == 0)
 #endregion
 
 // keep player from leaving gamemaker room space
-x = clamp(x, 0, room_width - sprite_width / 2);
-y = clamp(y, 0 + sprite_height, room_height -sprite_height / 2);
+x = clamp(x, - sprite_width / 2, room_width - sprite_width / 2);
+y = clamp(y, 0 + sprite_height, room_height);
 
 // dynamically set depth
 depth = -y;

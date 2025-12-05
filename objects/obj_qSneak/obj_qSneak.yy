@@ -1,20 +1,24 @@
 {
   "$GMObject":"",
-  "%Name":"obj_itemWidget",
+  "%Name":"obj_qSneak",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_itemWidget",
-  "overriddenProperties":[],
+  "name":"obj_qSneak",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_qBase","path":"objects/obj_qBase/obj_qBase.yy",},"propertyId":{"name":"questName","path":"objects/obj_qBase/obj_qBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sneak",},
+  ],
   "parent":{
-    "name":"UI Stuff",
-    "path":"folders/Objects/Controllers/UI Stuff.yy",
+    "name":"Quests",
+    "path":"folders/Objects/Quests.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"obj_qBase",
+    "path":"objects/obj_qBase/obj_qBase.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,

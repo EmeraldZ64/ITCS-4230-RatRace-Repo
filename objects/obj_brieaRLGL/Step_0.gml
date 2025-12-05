@@ -32,7 +32,8 @@ if (moved)
             break;
         case WATCH_STATE.TURN_TO_PLAYER:
             // CAUGHT
-			global.percentBlue-=0.05;
+			global.playerFinishedSneak = true;
+			global.playerWonSneak = false;
             room_goto(Room_Town);
             break;
     }

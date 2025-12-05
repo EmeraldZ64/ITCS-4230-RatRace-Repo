@@ -10,6 +10,10 @@ globalvar atMarket;
 global.playerWonStorage = false;
 global.playerFinishedStorage = false;
 
+// GLOBAL VARIABLES FOR SNEAK QUEST
+global.playerWonSneak = false;
+global.playerFinishedSneak = false;
+
 global.gameStarted = false;
 
 percentBlue = .40;

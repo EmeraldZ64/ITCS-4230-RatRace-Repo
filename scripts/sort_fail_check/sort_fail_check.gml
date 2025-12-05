@@ -6,9 +6,6 @@ function sort_fail_check(){
 		global.playerWonStorage = false;
 		global.playerFinishedStorage = true;
 		
-		// set player position to storage pile
-		obj_player.x = 3910;
-		obj_player.y = 1300;
 		return true;
 	}
 
@@ -18,8 +15,6 @@ function sort_fail_check(){
 		global.playerWonStorage = true;
 		global.playerFinishedStorage = true;
 		
-		obj_player.x = 3910;
-		obj_player.y = 1300;
 		return true;
 	}
 

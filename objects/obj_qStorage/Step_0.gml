@@ -14,12 +14,20 @@ if (state != QUESTSTATE.COMPLETE) and (global.playerFinishedStorage)
 {
 	if (global.playerWonStorage)
 	{
+		// set player position to storage pile
+		obj_player.x = 3910;
+		obj_player.y = 1300;
+		
 		display_dialogue(CompletedStorage);
 		completeQuest();
 		percentBlue += GOOD;
 	}
 	else // lost storage game
 	{
+		// set player position to storage pile
+		obj_player.x = 3910;
+		obj_player.y = 1300;
+		
 		display_dialogue(CompletedStorage, 1);
 		completeQuest();
 		percentBlue -= BAD;

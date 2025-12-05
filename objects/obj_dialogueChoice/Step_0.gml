@@ -59,6 +59,9 @@ if (keyboard_check_pressed(vk_enter)) or (keyboard_check_pressed(vk_space))
 				global.onQuest = true;
 				global.currentQuest = dialogueChoices[choice_hovering].questAccept;
 				global.movesLeft--;
+				
+				show_debug_message("quest becoming current {0}",dialogueChoices[choice_hovering].questAccept);
+				show_debug_message("moves left {0}", global.movesLeft);
 			}
 		}
 	}

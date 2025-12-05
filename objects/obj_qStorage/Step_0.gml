@@ -30,7 +30,7 @@ if (state != QUESTSTATE.COMPLETE) and (global.playerFinishedStorage)
 		
 		display_dialogue(CompletedStorage, 1);
 		completeQuest();
-		percentBlue -= BAD;
+		percentBlue += BAD;
 	}
 }
 

@@ -66,6 +66,7 @@
     {"id":{"name":"obj_boxNuts","path":"objects/obj_boxNuts/obj_boxNuts.yy",},},
     {"id":{"name":"obj_boxSeeds","path":"objects/obj_boxSeeds/obj_boxSeeds.yy",},},
     {"id":{"name":"obj_brieaRLGL","path":"objects/obj_brieaRLGL/obj_brieaRLGL.yy",},},
+    {"id":{"name":"obj_btsButton_end","path":"objects/obj_btsButton_end/obj_btsButton_end.yy",},},
     {"id":{"name":"obj_btsButton","path":"objects/obj_btsButton/obj_btsButton.yy",},},
     {"id":{"name":"obj_burrow","path":"objects/obj_burrow/obj_burrow.yy",},},
     {"id":{"name":"obj_camera_race","path":"objects/obj_camera_race/obj_camera_race.yy",},},

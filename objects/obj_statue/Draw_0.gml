@@ -5,7 +5,7 @@ if (interactible) and (!obj_player.state == PLAYERSTATES.INDIALOGUE) and (global
 	//draw_set_colour(c_black);
 	//draw_text(x, y - sprite_height + 150,  "E");
 	
-	draw_sprite_ext(spr_E, -1, x - 100, y - sprite_height + 150, 0.5, 0.5, 0, c_white, 1)
+	//draw_sprite_ext(spr_E, -1, x - 100, y - sprite_height + 150, 0.5, 0.5, 0, c_white, 1)
 }
 
 draw_self()

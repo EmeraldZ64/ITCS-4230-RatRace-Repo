@@ -1,5 +1,6 @@
 if (instance_exists(obj_player))
 {
+	// Ensure player is not visible in other rooms and UI widgets are visible in Town
 	if (room != Room_Town)
 	{
 		//layer_set_visible("GUI", false);
@@ -14,8 +15,18 @@ if (instance_exists(obj_player))
 		obj_voteBar.visible = true;
 		obj_itemWidget.visible = true;
 	}
+	
+	// Handle end state
+	if (global.movesLeft < 1) and (obj_player.state != PLAYERSTATES.INDIALOGUE) and (!global.onQuest)
+	{
+		if (percentBlue > .50)
+			room_goto(Room_Win)
+		else
+			room_goto(Room_Lose)
+	}
 }
 
+// Unlock the Statue Quest when available
 if (room == Room_Town)
 {
 	if (global.movesLeft < 3) and (obj_qStatue.state != QUESTSTATE.COMPLETE)

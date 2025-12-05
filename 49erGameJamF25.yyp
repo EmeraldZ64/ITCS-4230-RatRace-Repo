@@ -52,6 +52,7 @@
   "resources":[
     {"id":{"name":"fnt_dialogue","path":"fonts/fnt_dialogue/fnt_dialogue.yy",},},
     {"id":{"name":"fnt_voteUI","path":"fonts/fnt_voteUI/fnt_voteUI.yy",},},
+    {"id":{"name":"WhiskerbyDialogue","path":"notes/WhiskerbyDialogue/WhiskerbyDialogue.yy",},},
     {"id":{"name":"cont_collisionSpawner","path":"objects/cont_collisionSpawner/cont_collisionSpawner.yy",},},
     {"id":{"name":"cont_depthSorter","path":"objects/cont_depthSorter/cont_depthSorter.yy",},},
     {"id":{"name":"cont_endRoom","path":"objects/cont_endRoom/cont_endRoom.yy",},},

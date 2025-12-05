@@ -1,17 +1,23 @@
 {
   "$GMObject":"",
-  "%Name":"obj_qBase",
+  "%Name":"obj_qStatue",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_qBase",
-  "overriddenProperties":[],
+  "name":"obj_qStatue",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_qBase","path":"objects/obj_qBase/obj_qBase.yy",},"propertyId":{"name":"questName","path":"objects/obj_qBase/obj_qBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Statue",},
+  ],
   "parent":{
     "name":"Quests",
     "path":"folders/Objects/Quests.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_qBase",
+    "path":"objects/obj_qBase/obj_qBase.yy",
+  },
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -25,9 +31,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"questName","filters":[],"listItems":[],"multiselect":false,"name":"questName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

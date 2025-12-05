@@ -14,6 +14,9 @@ global.playerFinishedStorage = false;
 global.playerWonSneak = false;
 global.playerFinishedSneak = false;
 
+// GLOBAL VARIABLES FOR STATUE QUEST
+global.statueQuestUnlocked = false;
+
 global.gameStarted = false;
 
 percentBlue = .40;

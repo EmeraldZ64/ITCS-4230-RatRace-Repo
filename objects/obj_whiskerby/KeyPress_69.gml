@@ -15,7 +15,7 @@ var TutorialDialogue =
 	// 6 - gave button
 	new dialoguePage("Briea","Totally get it! Here ya go! Trust the vibes are going to be great when you're supporting me!"),
 	new dialoguePage("Whiskerby","My my... I must say it's not completely hideous, and surprisingly sturdy. Consider my interest in your campaign piqued."),
-	new dialoguePage("Whiskerby","Good luck, Miss Briea", true),
+	new dialoguePage("Whiskerby","Good luck, Miss Briea.", true),
 	
 	// 9 - did not give
 	new dialoguePage("Briea","Ya know what I think I might hold off. Shiny buttons won't sway a rodent like you. You make decisions with your brain, not your coat."),

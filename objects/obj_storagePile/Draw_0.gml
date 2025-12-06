@@ -7,7 +7,7 @@ if (interactible) and (!obj_player.state == PLAYERSTATES.INDIALOGUE) and (!globa
 	
 	draw_sprite_ext(spr_E, -1, x, y - sprite_height - 50, 0.5, 0.5, 0, c_white, 1)
 	
-	if ((!has_interacted) or (obj_qStorage.state == QUESTSTATE.NOTSTARTED)) and (global.currentQuest != "Tutorial")
+	if ((!has_interacted) or (obj_qStorage.state == QUESTSTATE.NOTSTARTED)) and (global.currentQuest != "Tutorial") and (!global.onQuest)
 		draw_sprite_ext(spr_questMarker, -1, x - 20, y - sprite_height - 70, 0.25, 0.25, 0, c_white, 1)
 }
 

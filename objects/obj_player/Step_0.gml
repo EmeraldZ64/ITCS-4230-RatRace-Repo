@@ -13,6 +13,9 @@ if (state == PLAYERSTATES.ROAMING)
 
 	if (input_x != 0) or (input_y != 0)
 	{
+		if (!audio_is_playing(s_Walking))
+			audio_play_sound(s_Walking, 3, true);
+		
 		// Do Acceleration
 	
 		/* 
@@ -57,6 +60,7 @@ else if (state == PLAYERSTATES.INDIALOGUE)
 	hspeed = 0;
 	vspeed = 0;
 	can_interact = false;
+	audio_stop_sound(s_Walking);
 }
 
 #region HANDLE PLAYER MOVEMENT FOR STATIC COLLISION OBJECTS
@@ -80,6 +84,10 @@ if (place_meeting(x, y + vspeed, obj_baseCollision)) // HANDLE VERTICAL CHECK
 }
 #endregion
 
+if (hspeed == 0) and (vspeed == 0)
+{
+	audio_stop_sound(s_Walking);
+}
 #region DETERMINE SPRITE TO DISPLAY FOR PLAYER BASED ON CURRENT MOVEMENT
 if (hspeed < 0) and (abs(hspeed) > abs(vspeed))
 {
@@ -114,6 +122,3 @@ depth = -y;
 
 // keep hitbox consistent no matter the sprite
 mask_index = spr_briea;
-
-//TODO: if(atMarket){set x and y to be at market when implemented} this is for after you win the race 
-//so you can talk to cl

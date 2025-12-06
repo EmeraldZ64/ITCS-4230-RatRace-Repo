@@ -157,9 +157,9 @@ var QuizQuest =
 	// 25, 26, 27
 	new dialoguePage("Briea", "Well, no cap, that's too easy, it's in a few days. Always a day before the Summer solstice.",false, 28),
 	new dialoguePage("Briea", "Lowkey I'm pretty sure it's like a few days after the Autumn Equinox, right?",false, 29),
-	new dialoguePage("Briea", "I'm pretty sure it happens during the Winter Solstice if I'm not wrong.",false, 28),
+	new dialoguePage("Briea", "I'm pretty sure it happens during the Winter Solstice if I'm not wrong.",false, 29),
 	
-	// 28 - wrong
+	// 28 - right
 	new dialoguePage("Whiskerby", "Well, that one might have been too easy since it's so soon. But good job, that's all the questions I had.",true),
 	// 29 - wrong
 	new dialoguePage("Whiskerby", "What? It's literally in a few days... How did you get that one wrong?",true),
@@ -169,6 +169,10 @@ var QuizQuest =
 	new dialoguePage("Whiskerby", "You know where to find me.", true)
 ]
 
+var CaughtStealin = 
+[
+	new dialoguePage("Whiskerby","Hmph, don't even bother asking me for my vote after what you tried. Preposterous!")
+]
 #endregion
 
 var DefaultDialogue = 
@@ -206,6 +210,10 @@ if (obj_player.can_interact) and (interactible)
 		}
 		else
 			display_dialogue(QuizQuest, 2);
+	}
+	else if (global.playerLostSneak)
+	{
+		display_dialogue(CaughtStealin);
 	}
 	else // not in quest
 	{

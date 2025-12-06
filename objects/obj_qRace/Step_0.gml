@@ -28,7 +28,7 @@ if (state != QUESTSTATE.COMPLETE)
 		
 		display_dialogue(RaceQuestEnd);
 		completeQuest();
-		percentBlue += GOOD;
+		percentBlue += GREAT;
 	}
 	else if (global.raceLose)
 	{

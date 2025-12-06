@@ -33,7 +33,8 @@ if (moved)
         case WATCH_STATE.TURN_TO_PLAYER:
             // CAUGHT
 			global.playerFinishedSneak = true;
-			global.playerWonSneak = false;
+			global.playerLostSneak = true;
+			audio_play_sound(s_LoseTrumpet, 4, false);
             room_goto(Room_Town);
             break;
     }

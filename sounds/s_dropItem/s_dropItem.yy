@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"s_dropItem",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.159161,
+  "exportDir":"",
+  "name":"s_dropItem",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"s_dropItem.mp3",
+  "volume":1.0,
+}

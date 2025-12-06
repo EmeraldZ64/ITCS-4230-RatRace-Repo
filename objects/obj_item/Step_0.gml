@@ -53,9 +53,11 @@ else
         // If correct → destroy and report result
         if (correct_drop)
         {
-            report_result(true);
+            audio_play_sound(s_dropItem, 4, false);
+			report_result(true);
             instance_destroy();
         }else if (place_meeting(x, y, obj_boxNuts) || place_meeting(x, y, obj_boxBerries) || place_meeting(x, y, obj_boxSeeds)) {
+			audio_play_sound(s_dropItem, 4, false);
 			report_result(false);
 			instance_destroy();
 		}else

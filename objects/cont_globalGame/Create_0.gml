@@ -12,6 +12,7 @@ global.playerFinishedStorage = false;
 
 // GLOBAL VARIABLES FOR SNEAK QUEST
 global.playerWonSneak = false;
+global.playerLostSneak = false;
 global.playerFinishedSneak = false;
 
 // GLOBAL VARIABLES FOR STATUE QUEST

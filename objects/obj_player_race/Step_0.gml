@@ -13,6 +13,7 @@ y = clamp(y, 0 + sprite_height, room_height -sprite_height / 2);
 if (global.raceWin){
 	global.raceWin = true;
 	global.atMarket = true;
+	audio_play_sound(s_TaDa, 4, false);
 	room_goto(Room_Town);
 }
 

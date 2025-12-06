@@ -6,7 +6,7 @@
                                            
 
 END GOAL: 
-Get an approval rating higher than 50% to win! Show your fellow rodents you are the best rodent to be mayor by completing quests, discussing policy, and showing that you know your history.
+Get an approval rating above 50% to win! Show your fellow rodents you are the best rodent to be mayor by completing quests, discussing policy, and showing that you know your history.
 
 HOW TO PLAY:
 Use WASD keys to move around the town. Use E to interact with characters or other objects. Use space or E to skip dialogue. Use up/down arrow keys to move between dialogue choices and enter to select. 
@@ -15,13 +15,13 @@ WALKTHROUGH:
 
 TUTORIAL QUEST
 Briea needs to hand out pins! seven characters: Emment left of fountain, Filbert right of fountain, Melvin top left of the map, Cheese Louise at the market, Whiskerby is below the town square, Goose in the bottom left, and Monty Jack in the bottom right. Give 3 buttons to complete the tutorial quest.
-Filbert: +5%
-Emment: +2%
+Filbert: +2%
+Emment: +1%
 Melvin: +0%
-Cheese Louise: +5%
+Cheese Louise: +2%
 Goose: +0%
-Whiskerby: +5%
-Monty: +2%
+Whiskerby: +2%
+Monty: +1%
 
 STEAL THE CHEESE
 Talk to Melvin (top left of map) to get this quest. The player is tasked with stealing cheese from Baron Whiskersby. Wait until Barron is looking the other way to walk. When a question mark appears over his head, he’s about to turn around. If you move during this state, he will become alert quicker. Stop walking when an exclamation mark appears, then wait for him to turn back around to walk again. Make it to the other side to win. Return to Melvin once the cheese has been collected.
@@ -45,7 +45,7 @@ Should be higher: -2%
 
 SUNFLOWER SEED DELIVERY
 Talk to Goose (bottom left of map) to get the quest. Deliver sunflower seeds to Cheese Louise! Use the up and down keys to stay on the path. Straying from the path or hitting loose cheese will slow the player down. Make it to the end of the path before the time runs out.
-Success: +2%
+Success: +5%
 Fail: -2%
 
 BITTEN STATUE
@@ -57,12 +57,13 @@ HISTORY QUIZ
 Once you only have one cheese left, you can talk to Barron Whiskerby, who will quiz you on the town's history. You can find informational signs around the town square that will help you in completing this quiz. 
 Each wrong answer: -1%
 Each right answer: +1%
+5/5 correct: +1%
 
 CREDITS/LICENSING:
-Rat Race was developed by Wall Pal Studios using Gamemaker Studio v2024.14.1.210
+Rat Race was developed by Wall Pal Studios using Gamemaker Studio v2024.14.1.253
 
 TEAM CREDITS:
-- Kayo Caswall: Programmer and music developer
+- Kayo Caswall: Programmer and musician
 - Bella Lemmons: Producer
 - Lauren Sharpe: Writer, level designer, and programmer
 - Jordan Torres: Art and Sound Design

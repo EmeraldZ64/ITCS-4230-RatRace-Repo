@@ -18,6 +18,7 @@ if (state != QUESTSTATE.COMPLETE) and (global.playerFinishedStorage)
 		obj_player.x = 3910;
 		obj_player.y = 1300;
 		
+		audio_play_sound(s_TaDa, 4, false);
 		display_dialogue(CompletedStorage);
 		completeQuest();
 		percentBlue += GOOD;
@@ -28,6 +29,7 @@ if (state != QUESTSTATE.COMPLETE) and (global.playerFinishedStorage)
 		obj_player.x = 3910;
 		obj_player.y = 1300;
 		
+		audio_play_sound(s_LoseTrumpet, 4, false);
 		display_dialogue(CompletedStorage, 1);
 		completeQuest();
 		percentBlue += BAD;

@@ -23,10 +23,14 @@ if (numQuestions = 5) and (obj_player.state != PLAYERSTATES.INDIALOGUE) and (sta
 	else if (numCorrect < 4)
 		display_dialogue(twoOrThreeDialogue);
 	else if (numCorrect < 6)
+	{
 		display_dialogue(fourOrFiveDialogue);
+		if (numCorrect == 5)
+			percentBlue += OKAY;
+	}
 
 	completeQuest();
 }
 
-show_debug_message("numCorrect: {0}", numCorrect)
-show_debug_message("numQuestions: {0}", numQuestions)
+//show_debug_message("numCorrect: {0}", numCorrect)
+//show_debug_message("numQuestions: {0}", numQuestions)

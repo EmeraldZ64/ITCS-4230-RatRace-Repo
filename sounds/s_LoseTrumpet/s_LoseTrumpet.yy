@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"s_LoseTrumpet",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":4.0941496,
+  "exportDir":"",
+  "name":"s_LoseTrumpet",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"s_LoseTrumpet.mp3",
+  "volume":1.0,
+}

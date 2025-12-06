@@ -20,9 +20,15 @@ if (instance_exists(obj_player))
 	if (global.movesLeft < 1) and (obj_player.state != PLAYERSTATES.INDIALOGUE) and (!global.onQuest)
 	{
 		if (percentBlue > .50)
+		{
+			audio_play_sound(s_WinTrumpet, 4, false);
 			room_goto(Room_Win)
+		}
 		else
+		{
+			audio_play_sound(s_LoseTrumpet, 4, false);
 			room_goto(Room_Lose)
+		}
 	}
 }
 
@@ -42,7 +48,7 @@ if (room == Room_Town)
 	}
 	
 	// Unlock the Quiz quest when available
-	if (global.movesLeft < 2) and ((obj_melvin.deniedMelvin) or (global.playerWonSneak) or (obj_qSneak.state == QUESTSTATE.NOTSTARTED))
+	if (global.movesLeft < 2) and (!global.playerLostSneak) and (obj_qQuiz.state == QUESTSTATE.NOTSTARTED)
 	{
 		global.quizQuestUnlocked = true;
 	}

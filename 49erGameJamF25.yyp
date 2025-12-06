@@ -110,6 +110,7 @@
     {"id":{"name":"obj_statue","path":"objects/obj_statue/obj_statue.yy",},},
     {"id":{"name":"obj_storageManager","path":"objects/obj_storageManager/obj_storageManager.yy",},},
     {"id":{"name":"obj_storagePile","path":"objects/obj_storagePile/obj_storagePile.yy",},},
+    {"id":{"name":"obj_sunflower","path":"objects/obj_sunflower/obj_sunflower.yy",},},
     {"id":{"name":"obj_timer","path":"objects/obj_timer/obj_timer.yy",},},
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},},
     {"id":{"name":"obj_treeCollision","path":"objects/obj_treeCollision/obj_treeCollision.yy",},},

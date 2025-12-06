@@ -13,7 +13,6 @@ if (seconds <= 0) {
 
 }
 	}
-	show_debug_message(raceLose);
 
 } else {
     // Restart the alarm for another second

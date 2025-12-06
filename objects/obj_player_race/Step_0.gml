@@ -11,8 +11,7 @@ if (keyboard_check(ord("S")) && !global.raceLose) {
 x = clamp(x, 0, room_width - sprite_width / 2);
 y = clamp(y, 0 + sprite_height, room_height -sprite_height / 2);
 if (global.raceWin){
-	global.percentBlue += GREAT;
-	global.raceWin = false;
+	global.raceWin = true;
 	global.atMarket = true;
 	room_goto(Room_Town);
 }

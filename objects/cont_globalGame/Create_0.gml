@@ -2,9 +2,9 @@ globalvar percentBlue; // globalvar is deprecated please change to global. when 
 global.movesLeft = 5;
 
 // GLOBAL VARIABLES FOR RACE QUEST
-globalvar raceWin;
-globalvar raceLose;
-globalvar atMarket;
+global.raceWin = false;
+global.raceLose = false;
+global.atMarket = false;
 
 // GLOBAL VARIABLES FOR STORAGE QUEST
 global.playerWonStorage = false;
@@ -20,7 +20,6 @@ global.statueQuestUnlocked = false;
 global.gameStarted = false;
 
 percentBlue = .40;
-atMarket = false;
 
 // define values for dialogue scores
 #macro AWFUL -.05

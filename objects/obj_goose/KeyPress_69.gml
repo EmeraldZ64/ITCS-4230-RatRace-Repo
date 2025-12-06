@@ -44,6 +44,38 @@ var GaveAButton =
 
 #endregion
 
+#region Race Dialogue
+
+var RaceQuestPrompt = 
+[
+	new dialoguePage("Goose","Yo Briea! Heard you've been making waves with this whole mayoral stuff."),
+	new dialoguePage("Goose","I got a little side-quest for ya! If you're not too busy to help an old friend."),
+	new dialoguePage("Briea","Depends! Is it something that's gonna get me in trouble like old times, or is it something mayoral?"),
+	new dialoguePage("Goose","Hehe... Bit of both actually. See these sunflower seeds? Cheese Louise is waiting on them in the market, and she needs them real soon."),
+	new dialoguePage("Briea","That doesn't sound like any trouble... What's the catch?"),
+	new dialoguePage("Goose","Welllllll...  word is, a sneaky crow's been eyeballin' 'em. So you gotta do it quickly before it spots ya. So, you in?", , ,
+	[
+		new dialogueChoice("I'm in!", 6, ,"Race"),
+		new dialogueChoice("Maybe Later", 8)
+	]),
+	
+	// 6 - accept quest
+	new dialoguePage("Briea","Say less! You know I love a bit of danger. This will be epic!"),
+	new dialoguePage("Goose","Alright, Mayor Mouse, don't let that pep go to waste. Go show that bird who runs these roots. And don't get hurt, you know I ain't got seed insurance.", true),
+	
+	// 8 - do quest later
+	new dialoguePage("Briea","Oooh, tempting... but I've got campaign chaos to handle first. Rain check?"),
+	new dialoguePage("Goose","Fair enough, no rush. These seeds will be here if that damn crow don't snack 'em first...", true),
+	
+	// 10 - came back later
+	new dialoguePage("Goose","Big B! You here to prove you still got it?", , ,
+	[
+		new dialogueChoice("I'm in!", 6, ,"Race"),
+		new dialogueChoice("Maybe Later", 8)
+	])
+]
+
+#endregion
 if (obj_player.can_interact) and (interactible)
 {
 	if (global.currentQuest == "Tutorial")
@@ -62,5 +94,15 @@ if (obj_player.can_interact) and (interactible)
 		{
 			display_dialogue(TutorialLater);
 		}
+	}
+	else if (!global.onQuest) and (obj_qRace.state != QUESTSTATE.COMPLETE)
+	{
+		if (!foundQuest)
+		{
+			display_dialogue(RaceQuestPrompt);
+			foundQuest = true;
+		}
+		else
+			display_dialogue(RaceQuestPrompt, 10);
 	}
 }

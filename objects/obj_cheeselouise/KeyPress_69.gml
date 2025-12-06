@@ -42,6 +42,31 @@ var GaveAButton =
 
 #endregion
 
+var MiniDialogue = 
+[
+	new dialoguePage("Cheese Louise","Well, hey there, darlin'! I was just thinkin' about you."),
+	new dialoguePage("Cheese Louise","I heard the townsfolk have been chattin' 'bout that cheese tax again. You got any thoughts on it?", , ,
+	[
+		new dialogueChoice("I'm for it", 2, GOOD),
+		new dialogueChoice("Should be higher", 5, BAD)
+	]),
+	
+	// 2 - good
+	new dialoguePage("Briea","Oh, do I! You know I'm for it; every crumb we save will go towards helping our community."),
+	new dialoguePage("Briea","We need more funding for better burrows, food for the hungry, and, of course, a better festival."),
+	new dialoguePage("Cheese Louise","Well, sweetie. I'm glad a rodent is finally showing some care for our community. It's not about takin', it's about making sure everyone gets a fair share.", true),
+	
+	// 5 - bad
+	new dialoguePage("Briea","Oh, totally! But I've been thinking... we could raise it even higher!"),
+	new dialoguePage("Briea","Like, double the cheese tax! Maybe even add a luxury cheese fee! You know, for the fancy bries and imported goudas."),
+	new dialoguePage("Cheese Louise","Double it, sugar? Now that might be too ambitious for me.", true)
+]
+
+var DefaultDialogue = 
+[
+	new dialoguePage("Cheese Louise","Hey there, Sugar!", true),
+	new dialoguePage("Cheese Louise","Thank you kindly for the delivery!", true)
+]
 if (obj_player.can_interact) and (interactible)
 {
 	if (global.currentQuest == "Tutorial")
@@ -60,5 +85,18 @@ if (obj_player.can_interact) and (interactible)
 		{
 			display_dialogue(TutorialLater);
 		}
+	}
+	else if (global.raceWin)
+	{
+		display_dialogue(DefaultDialogue, 1);
+	}
+	else if (!global.onQuest) and (obj_qRace.state != QUESTSTATE.COMPLETE) and (!miniDialogueDone)
+	{
+		display_dialogue(MiniDialogue);
+		miniDialogueDone = true;
+	}
+	else // default
+	{
+		display_dialogue(DefaultDialogue);
 	}
 }

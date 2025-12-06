@@ -1,22 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_qRace",
+  "%Name":"obj_sunflower",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_qRace",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_qBase","path":"objects/obj_qBase/obj_qBase.yy",},"propertyId":{"name":"questName","path":"objects/obj_qBase/obj_qBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Race",},
-  ],
+  "name":"obj_sunflower",
+  "overriddenProperties":[],
   "parent":{
-    "name":"Quests",
-    "path":"folders/Objects/Quests.yy",
+    "name":"Environment",
+    "path":"folders/Objects/Environment.yy",
   },
   "parentObjectId":{
-    "name":"obj_qBase",
-    "path":"objects/obj_qBase/obj_qBase.yy",
+    "name":"obj_baseCollision",
+    "path":"objects/obj_baseCollision/obj_baseCollision.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_sunflower",
+    "path":"sprites/spr_sunflower/spr_sunflower.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

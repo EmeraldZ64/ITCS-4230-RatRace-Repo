@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"WhiskerbyDialogue",
+  "name":"WhiskerbyDialogue",
+  "parent":{
+    "name":"49erGameJamF25",
+    "path":"49erGameJamF25.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

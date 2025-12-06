@@ -38,6 +38,9 @@
     "name":"spr_emment",
     "path":"sprites/spr_emment/spr_emment.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_emment_collision",
+    "path":"sprites/spr_emment_collision/spr_emment_collision.yy",
+  },
   "visible":true,
 }

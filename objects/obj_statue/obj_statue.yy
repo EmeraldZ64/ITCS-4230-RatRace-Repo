@@ -1,19 +1,25 @@
 {
   "$GMObject":"",
   "%Name":"obj_statue",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":69,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_statue",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_baseCollision","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"propertyId":{"name":"scale","path":"objects/obj_baseCollision/obj_baseCollision.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.6",},
   ],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"Interact Props",
+    "path":"folders/Objects/NPC/Interact Props.yy",
   },
   "parentObjectId":{
-    "name":"obj_baseCollision",
-    "path":"objects/obj_baseCollision/obj_baseCollision.yy",
+    "name":"obj_baseNPC",
+    "path":"objects/obj_baseNPC/obj_baseNPC.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

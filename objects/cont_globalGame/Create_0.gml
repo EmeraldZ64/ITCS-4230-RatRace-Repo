@@ -17,6 +17,8 @@ global.playerFinishedSneak = false;
 // GLOBAL VARIABLES FOR STATUE QUEST
 global.statueQuestUnlocked = false;
 
+global.quizQuestUnlocked = false;
+
 global.gameStarted = false;
 
 percentBlue = .40;
@@ -24,7 +26,9 @@ percentBlue = .40;
 // define values for dialogue scores
 #macro AWFUL -.05
 #macro BAD -.02
+#macro EHH -.01
 #macro NEUTRAL 1 - 1 // 0 is a constant can't use blehhh
+#macro OKAY .01
 #macro GOOD .02
 #macro GREAT .05
 

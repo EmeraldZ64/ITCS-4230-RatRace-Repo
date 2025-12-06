@@ -8,7 +8,7 @@ new dialoguePage("Monty Jack","Well, feel free to skip me, I'd much rather sport
 new dialoguePage("Monty Jack","He's a real rat of the rodents- Providing more than just big flashy promises with no results.",
 false, -1,
 [
-new dialogueChoice("Give Button", 5, GOOD, , function(){obj_qTutorial.giveButton("Monty Jack")}),
+new dialogueChoice("Give Button", 5, .01, , function(){obj_qTutorial.giveButton("Monty Jack")}),
 new dialogueChoice("Keep Button", 7, BAD)
 ]
 ),
@@ -25,7 +25,7 @@ var TutorialLater =
 [
 	new dialoguePage("Monty Jack","Ah, Briea is back. Care to share a word or two for my readers?", , ,
 	[
-		new dialogueChoice("Give Button", 1, GOOD, , function(){obj_qTutorial.giveButton("Monty Jack")}),
+		new dialogueChoice("Give Button", 1, .01, , function(){obj_qTutorial.giveButton("Monty Jack")}),
 		new dialogueChoice("Keep Button", 4)
 	]),
 	
@@ -85,6 +85,12 @@ var LanternQuestDone =
 ]
 #endregion
 
+var DefaultDialogue = 
+[
+	new dialoguePage("Monty Jack","Hello Briea..."),
+	new dialoguePage("Monty Jack","Unless you're here to give me an exclusive, I don't have time for your chatter. I have devoted readers who are just itching for my next story, and I can't disappoint.")
+]
+
 if (obj_player.can_interact) and (interactible)
 {
 	if (global.currentQuest == "Tutorial")
@@ -124,5 +130,9 @@ if (obj_player.can_interact) and (interactible)
 		}
 		else
 			display_dialogue(LanternQuestPrompt, 10);
+	}
+	else // not in quest
+	{
+		display_dialogue(DefaultDialogue);
 	}
 }

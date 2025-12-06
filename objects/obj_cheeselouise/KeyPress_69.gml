@@ -6,7 +6,7 @@ var TutorialDialogue =
 	new dialoguePage("Cheese Louise","Now ain't that just sweet. Ya'know, I still don't reckon I know which of y'all I'll be voting for."),
 	new dialoguePage("Cheese Louise","You're sweet and all, but... Ric's got the experience.", , ,
 	[
-		new dialogueChoice("Give Button", 4, GREAT, , function() {obj_qTutorial.giveButton("Cheese Louise")}),
+		new dialogueChoice("Give Button", 4, GOOD, , function() {obj_qTutorial.giveButton("Cheese Louise")}),
 		new dialogueChoice("Keep Button", 6)
 	]),
 	// 4 - gave button
@@ -22,7 +22,7 @@ var TutorialLater =
 [
 	new dialoguePage("Cheese Louise","Well hey there sugar. You stopping by with your little campain doodads again? Or just coming to brighten up my day?", , ,
 	[
-		new dialogueChoice("Give Button", 1, GREAT, , function() {obj_qTutorial.giveButton("Cheese Louise")}),
+		new dialogueChoice("Give Button", 1, GOOD, , function() {obj_qTutorial.giveButton("Cheese Louise")}),
 		new dialogueChoice("Keep Button", 3)
 	]),
 	

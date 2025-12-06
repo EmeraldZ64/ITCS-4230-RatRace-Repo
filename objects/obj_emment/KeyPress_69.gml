@@ -8,7 +8,7 @@ var TutorialDialogue =
 	new dialoguePage("Emment","Well, with all due respect, don't bother leavin' one with me."),
 	new dialoguePage("Emment","I'm lookin' for a candidate who knows what they're doin'. Not a kid playin' make-believe with no clue how things really work in this town.", , ,
 	[
-		new dialogueChoice("Give Button", 5, GOOD, , function() {obj_qTutorial.giveButton("Emment")}),
+		new dialogueChoice("Give Button", 5, .01, , function() {obj_qTutorial.giveButton("Emment")}),
 		new dialogueChoice("Keep Button", 8)
 	]),
 	
@@ -26,7 +26,7 @@ var TutorialLater =
 [
 	new dialoguePage("Emment","Miss Briea, back so soon? Not to cause trouble, I hope...", , ,
 	[
-		new dialogueChoice("Give Button", 1, GOOD, , function() {obj_qTutorial.giveButton("Emment")}),
+		new dialogueChoice("Give Button", 1, .01, , function() {obj_qTutorial.giveButton("Emment")}),
 		new dialogueChoice("Keep Button", 3)
 	]),
 	
@@ -47,7 +47,8 @@ var GaveAButton =
 
 var DefaultDialogue = 
 [
-	new dialoguePage("Emment", "...")
+	new dialoguePage("Emment", "Miss Briea."),
+	new dialoguePage("Emment","You better not be up to no good- I got too much to worry about already.")
 ]
 
 if (obj_player.can_interact) and (interactible)

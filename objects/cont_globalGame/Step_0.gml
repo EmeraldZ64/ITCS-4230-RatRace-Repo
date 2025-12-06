@@ -40,4 +40,14 @@ if (room == Room_Town)
 	{
 		global.statueQuestUnlocked = false;
 	}
+	
+	// Unlock the Quiz quest when available
+	if (global.movesLeft < 2) and ((obj_melvin.deniedMelvin) or (global.playerWonSneak) or (obj_qSneak.state == QUESTSTATE.NOTSTARTED))
+	{
+		global.quizQuestUnlocked = true;
+	}
+	else
+	{
+		global.quizQuestUnlocked = false;
+	}
 }

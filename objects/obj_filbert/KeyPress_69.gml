@@ -7,14 +7,14 @@ new dialoguePage("Filbert","Erm... They look real nice, but... uh, it's just-"),
 new dialoguePage("Filbert","I'm trying to stay neutral. Ya'know Ric Otto's got the experience, but you've got the energy. So much energy... Maybe too much? No! Just much...",
 false, -1,
 [
-new dialogueChoice("Give Button", 4, GREAT, , function() {obj_qTutorial.giveButton("Filbert")}),
+new dialogueChoice("Give Button", 4, GOOD, , function() {obj_qTutorial.giveButton("Filbert")}),
 new dialogueChoice("Keep Button", 7)
 ]
 ),
 // 4, great
 new dialoguePage("Briea","I'll take that as a compliment... Here! Take one, it's not a commitment, just an epic accessory."),
 new dialoguePage("Filbert","Oh... oh wow. Okay. I'll... I'll wear it on the inside of my vest! So no one thinks I'm biased."),
-new dialoguePage("Filbert","But, um... thanks. Really. You're very... brave? Yes. That's the word", true),
+new dialoguePage("Filbert","But, um... thanks. Really. You're very... brave? Yes. That's the word.", true),
 
 // 7, neutral
 new dialoguePage("Briea","I get it, King, you're in your mysterious era. I'll save 'em for someone who's not afraid of decisions."),
@@ -25,7 +25,7 @@ var TutorialLater =
 [
 	new dialoguePage("Filbert","Oh! Hello... again... Urm, did... did you need something else? I'm... err, happy to help. Hehe.", , ,
 	[
-		new dialogueChoice("Give Button", 1, GREAT, , function() {obj_qTutorial.giveButton("Filbert")}),
+		new dialogueChoice("Give Button", 1, GOOD, , function() {obj_qTutorial.giveButton("Filbert")}),
 		new dialogueChoice("Keep Button", 4)
 	]),
 	
@@ -46,6 +46,12 @@ var GaveAButton =
 ]
 #endregion
 
+var DefaultDialogue = 
+[
+	new dialoguePage("Filbert","Oh! Uh- hi..."),
+	new dialoguePage("Filbert","Um, don't hehe mind me... Just uh existing over here... hehe, I'll shut up now before I say something stupid...")
+]
+
 if (obj_player.can_interact) and (interactible)
 {
 	if (global.currentQuest == "Tutorial")
@@ -64,5 +70,9 @@ if (obj_player.can_interact) and (interactible)
 		{
 			display_dialogue(TutorialLater);
 		}
+	}
+	else // not on quest
+	{
+		display_dialogue(DefaultDialogue);
 	}
 }

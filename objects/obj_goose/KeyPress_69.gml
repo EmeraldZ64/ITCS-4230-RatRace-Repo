@@ -6,7 +6,7 @@ var TutorialDialogue =
 	new dialoguePage("Briea", "Goose! Please, I'm tryin' to look professional. Even got these official buttons."),
 	new dialoguePage("Goose", "Gimme one! Lemme rep the brand! Gotta support my bestie-slash-former-partner-in-crime!", , ,
 		[
-		new dialogueChoice("Give Button", 4, GOOD, , function() {obj_qTutorial.giveButton("Goose")}),
+		new dialogueChoice("Give Button", 4, , , function() {obj_qTutorial.giveButton("Goose")}),
 		new dialogueChoice("Keep Button", 6)
 		]),
 	
@@ -23,7 +23,7 @@ var TutorialLater =
 [
 	new dialoguePage("Goose","Bestie! What's up, thought you'd be busy giving out your merch. You still got time to see your former crime buddy.", , ,
 	[
-		new dialogueChoice("Give Button", 1, GOOD, , function() {obj_qTutorial.giveButton("Goose")}),
+		new dialogueChoice("Give Button", 1, , , function() {obj_qTutorial.giveButton("Goose")}),
 		new dialogueChoice("Keep Button", 4)
 	]),
 	
@@ -76,6 +76,13 @@ var RaceQuestPrompt =
 ]
 
 #endregion
+
+var DefaultDialogue = 
+[
+	new dialoguePage("Goose", "Heyyyy Briea!"),
+	new dialoguePage("Goose","Good luck out there campaigning. I know you got this, but even if you don't, you still got me.")
+]
+
 if (obj_player.can_interact) and (interactible)
 {
 	if (global.currentQuest == "Tutorial")
@@ -104,5 +111,9 @@ if (obj_player.can_interact) and (interactible)
 		}
 		else
 			display_dialogue(RaceQuestPrompt, 10);
+	}
+	else
+	{
+		display_dialogue(DefaultDialogue);
 	}
 }

@@ -59,6 +59,14 @@ Each wrong answer: -1%
 Each right answer: +1%
 5/5 correct: +1%
 
+CHEAT CODES:
+Alt + R - Restart Game
+Alt + T - Skip to Win Screen
+Alt + Y - Skip to Lose Screen
+Alt + X - set buttons in tutorial to 0
+Alt + C - Remove 2 movesLeft
+Alt + V - +10% approval score
+
 CREDITS/LICENSING:
 Rat Race was developed by Wall Pal Studios using Gamemaker Studio v2024.14.1.253
 
@@ -70,5 +78,6 @@ TEAM CREDITS:
 
 SOUND CREDITS:
 149418kvgarlicapplesdroppingthudinaforest.wav by kvgarlic – https://freesound.org/people/kvgarlic/sounds/149418/ – License: Creative Commons 0 191718adrianndrumroll.wav by adriann – https://freesound.org/people/adriann/sounds/191718/ – License: Creative Commons 0 331478cinemavocalpassos-na-brita-walk-in-crushed-stone.wav by CinemaVocal – https://freesound.org/people/CinemaVocal/sounds/331478/ – License: Creative Commons 0 506162sifujordancoffee-bag.wav by sifujordan – https://freesound.org/people/sifujordan/sounds/506162/ – License: Creative Commons 0 537988ambientsoundappcrow.wav by Ambientsoundapp – https://freesound.org/people/Ambientsoundapp/sounds/537988/ – License: Creative Commons 0 515290brevicepscrows-and-other-birds.wav by breviceps –https://freesound.org/people/Breviceps/sounds/515290/ – License: Creative Commons 0 539593geraramirezwah-wah.wav by geraramirez – https://freesound.org/people/GeraRamirez/sounds/539593/ – License: Creative Commons 0 589828mrfossysfx_squelch_slayer_207.wav by mrfossy – https://freesound.org/people/MrFossy/sounds/589828/ – License: Creative Commons 0 626950maikkihapsistadaa.wav by maikkihapsis – https://freesound.org/people/Maikkihapsis/sounds/626950/ – License: Creative Commons 0 669298jorgemacatrumpet-call.wav by jorgemaca – https://freesound.org/people/Jorgemaca/sounds/669298/ – License: Creative Commons 0 Cheerful-march-happy-march-music-292405.mp3 by JuliusH – https://pixabay.com/music/marching-band-cheerful-march-happy-march-music-292405/ – Free for use through Pixabay Musical-march-4312.mp3 by by JuliusH – https://pixabay.com/music/marching-band-musical-march-4312/ – Free for use through Pixabay Toelzer-schuetzenmarsch-339116.mp3 by Lisa9977 – https://pixabay.com/music/folk-toelzer-schuetzenmarsch-339116/ – Free for use through Pixabay
+"Sneaky" by Kayo Caswall
 
 
